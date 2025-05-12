@@ -1,12 +1,44 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Zilly eCommerce Website Clone
 
-Currently, two official plugins are available:
+This repository contains a clone of the Zilly eCommerce WordPress theme demo, which you can view here:  
+👉 [Zilly Theme Live Demo](https://www.radiustheme.com/demo/wordpress/themes/zilly/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Description
 
-## Expanding the ESLint configuration
+This project is a front-end clone of the Zilly eCommerce template by RadiusTheme. It is built for practice and educational purposes to understand how modern eCommerce websites are designed, structured, and styled.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💻 Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- (Optional) Tailwind CSS or Bootstrap if you're using any framework
+
+## 🎯 Goal
+
+The main goal of this project is to replicate the layout and style of the original Zilly theme to improve web development skills, including:
+
+- Responsive layout design
+- Navigation bar and hero section cloning
+- Product listing and grid layout
+- Reusable UI components
+
+## 🚀 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kazirobin/react-js-e-commerce-project.git
+   ```
+
+2. Open the `index.html` file in your browser.
+3. Start learning and customizing the layout!
+
+## 📷 Live Preview
+
+Once deployed, you can add your live demo link here:
+[Live Demo Link](https://react-js-e-commerce-project.vercel.app/)
+
+## 📝 Disclaimer
+
+This project is for **educational and non-commercial** purposes only. All rights to the original design belong to Kazi Robin 
