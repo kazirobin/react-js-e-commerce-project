@@ -1,0 +1,14 @@
+[
+  {
+    "subject": "0",
+    "CategoriesSvgIcons": {
+      "beverage": "./images/categories_icon/beverage.svg",
+      "desserts": "./images/categories_icon/desserts.svg",
+      "drinks_juice": "./images/categories_icon/drinks_juice.svg",
+      "fish_meats": "./images/categories_icon/fish_meats.svg",
+      "fresh_fruits": "./images/categories_icon/fresh_fruits.svg",
+      "toys": "./images/categories_icon/toys.svg",
+      "vegetables": "./images/categories_icon/vegetables.svg"
+    }
+  }
+]
