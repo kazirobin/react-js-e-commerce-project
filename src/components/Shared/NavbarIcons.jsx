@@ -14,26 +14,26 @@ const NavbarIcons = () => {
       </div>
       <div className="w-0.5 bg-gray-400 h-4"></div>
 
-      <div className="cursor-pointer relative">
+      <div className="cursor-pointer relative hidden md:block">
         <div className="absolute bottom-3 right-4 bg-amber-300 px-1 text-xs rounded-full">
           0
         </div>
         <HiOutlineArrowPath />
       </div>
-      <div className="cursor-pointer relative">
+      <div className="cursor-pointer relative hidden md:block">
         <div className="absolute bottom-3 right-4 bg-amber-300 px-1 text-xs rounded-full">
           0
         </div>
         <FaRegHeart />
       </div>
-      <div className="cursor-pointer relative">
+      <div className="cursor-pointer relative hidden md:block">
         <div className="absolute bottom-3 right-4 bg-amber-300 px-1 text-xs rounded-full">
           0
         </div>
         <RiShoppingBasket2Line />
       </div>
 
-      <div className="cursor-pointer" onClick={handleSidebar}>
+      <div className="cursor-pointer transition-all" onClick={handleSidebar}>
         <HiBars3CenterLeft />
       </div>
         {sidebar && <Sidebar handleSidebar={handleSidebar}/>}
