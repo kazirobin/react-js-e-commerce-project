@@ -1,14 +1,17 @@
-import SidebarIcons from "../Shared/SidebarIcons";
-import SidebarLinks from "../Shared/SidebarLinks";
+import SidebarIcons from "./SidebarIcons";
+import SidebarLinks from "./SidebarLinks";
 
-const Sidebar = ({handleSidebar}) => {
+const Sidebar = ({ handleSidebar }) => {
   return (
-    <div className="absolute top-0 left-0 flex transition-all">
-      <div className="bg-green-800 h-screen w-16 block">
-        <SidebarIcons handleSidebar={handleSidebar}/>
-      </div>
-      <div className="bg-white w-130"> 
-        <SidebarLinks/>
+    <div className="">
+      <div className="flex">
+        <div className="bg-green-800 hidden sm:block h-157 w-20 -mt-38 text-xl">
+          <SidebarIcons handleSidebar={handleSidebar} />
+        </div>
+        <div className="sm:-mt-38 w-100 bg-white">
+          <SidebarLinks />
+        </div>
+        <div className="flex-1 opacity-50"></div>
       </div>
     </div>
   );

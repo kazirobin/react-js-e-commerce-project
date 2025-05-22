@@ -1,17 +1,21 @@
 import { IoIosClose } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineArrowPath } from "react-icons/hi2";
-import { RiSearchLine, RiShoppingBasket2Line, RiUser6Line } from "react-icons/ri";
+import {
+  RiSearchLine,
+  RiShoppingBasket2Line,
+  RiUser6Line,
+} from "react-icons/ri";
 import logoLight from "../../../public/images/logo/light_logo.svg";
-import SocialHorizontal from "./SocialHorizontal";
+import SocialHorizontal from "../Shared/SocialHorizontal";
 
 const SidebarIcons = ({ handleSidebar }) => {
   return (
     <div>
-      <div className="text-white flex flex-col items-center gap-4 mt-5">
+      <div className="text-white flex flex-col items-center gap-4 py-15">
         <div
           onClick={handleSidebar}
-          className="cursor-pointer rounded bg-white text-gray-500 hover:text-black w-6"
+          className="cursor-pointer rounded bg-white text-gray-500 hover:text-black p-1 text-2xl"
         >
           <IoIosClose />
         </div>
@@ -34,17 +38,17 @@ const SidebarIcons = ({ handleSidebar }) => {
           <FaRegHeart />
         </div>
         <div className="cursor-pointer">
-        <RiUser6Line />
-      </div>
+          <RiUser6Line />
+        </div>
         <div className="cursor-pointer">
-        <RiSearchLine />
+          <RiSearchLine />
+        </div>
       </div>
-      </div>
-      <div className="rotate-270 mt-20">
+      <div className="rotate-270 mt-4">
         <img src={logoLight} alt="" />
       </div>
-      <div className="text-white flex justify-center mt-15">
-        <SocialHorizontal/>
+      <div className="text-white flex justify-center mt-15 pb-12">
+        <SocialHorizontal />
       </div>
     </div>
   );

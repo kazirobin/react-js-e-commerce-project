@@ -7,7 +7,7 @@ import { RiSearchLine } from "react-icons/ri";
 const Categories = () => {
   return (
     <>
-      <div className="group p-2 ml-5 hidden lg:block">
+      <div className="group p-2 hidden lg:block">
         <h3 className="flex items-center font-semibold rounded-full border border-gray-300 py-2 px-3">
           <span className="font-bold text-2xl text-green-600 pr-1 ">
             <BsFilterLeft />
@@ -45,7 +45,7 @@ const Categories = () => {
           </Link>
         </div>
       </div>
-      <div className="hidden lg:flex content-between border border-gray-300 rounded-full  w-5/12  ps-6">
+      <div className="hidden lg:flex content-between border border-gray-300 rounded-full h-10 m-auto w-5/12  ps-6">
         <input
           type="text"
           name=""
