@@ -1,8 +1,7 @@
 import { FaRegHeart } from "react-icons/fa";
 import { HiBars3CenterLeft, HiOutlineArrowPath } from "react-icons/hi2";
 import { RiShoppingBasket2Line, RiUser6Line } from "react-icons/ri";
-import Sidebar from "../sidebar/Sidebar";
-import { useState } from "react";
+
 
 const NavbarIcons = ({ handleSidebar }) => {
   return (
