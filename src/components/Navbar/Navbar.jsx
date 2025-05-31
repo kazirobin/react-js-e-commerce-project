@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import DarkLogo from "../../../public/images/logo/dark_logo.svg";
-import Categories from "../shared/Categories";
-import NavbarIcons from "../shared/NavbarIcons";
+import Categories from "../Shared/Categories";
+import NavbarIcons from './../shared/NavbarIcons';
 
 const Navbar = ({ handleSidebar }) => {
   return (

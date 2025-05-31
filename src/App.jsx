@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import Navbar from "./components/nav/Navbar";
-import TopAd from './components/topAd/TopAd';
-import Sidebar from './components/sidebar/Sidebar';
+import Navbar from "./components/Navbar/Navbar";
+import TopAd from './components/TopAd/TopAd';
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
