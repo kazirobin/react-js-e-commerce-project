@@ -7,12 +7,12 @@ import {
   RiUser6Line,
 } from "react-icons/ri";
 import logoLight from "../../../public/images/logo/light_logo.svg";
-import SocialHorizontal from "../Shared/SocialHorizontal";
+import SocialHorizontal from "../shared/SocialHorizontal";
 
 const SidebarIcons = ({ handleSidebar }) => {
   return (
     <div>
-      <div className="text-white flex flex-col items-center gap-4 py-15">
+      <div className="text-white flex flex-col items-center gap-4 mt-4">
         <div
           onClick={handleSidebar}
           className="cursor-pointer rounded bg-white text-gray-500 hover:text-black p-1 text-2xl"

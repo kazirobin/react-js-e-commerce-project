@@ -5,7 +5,7 @@ import { RiSearchLine } from "react-icons/ri";
 const SidebarLinks = () => {
   const [option, setOption] = useState("All Categories");
   return (
-    <div className="flex flex-col p-7 ">
+    <div className="flex flex-col p-7">
       <div className="flex mt-10 rounded-md bg-gray-300 px-2 sm:w-80">
         <div className="flex items-center group  p-1 w-40">
           {option} <MdKeyboardArrowDown />

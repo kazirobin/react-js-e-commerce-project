@@ -1,11 +1,10 @@
 import { FaRegHeart } from "react-icons/fa";
 import { HiBars3CenterLeft, HiOutlineArrowPath } from "react-icons/hi2";
 import { RiShoppingBasket2Line, RiUser6Line } from "react-icons/ri";
-import Sidebar from "../Sidebar/Sidebar";
+import Sidebar from "../sidebar/Sidebar";
 import { useState } from "react";
 
-const NavbarIcons = ({handleSidebar}) => {
- 
+const NavbarIcons = ({ handleSidebar }) => {
   return (
     <div className="ml-auto flex gap-3 items-center text-xl sm:text-2xl">
       <div className="cursor-pointer sm:text-emerald-700 sm:bg-emerald-100 p-1 rounded-full">
@@ -32,10 +31,13 @@ const NavbarIcons = ({handleSidebar}) => {
         <RiShoppingBasket2Line />
       </div>
 
-      <div className="cursor-pointer transition-all order-4 sm:order-1" onClick={handleSidebar}>
+      <div
+        className="cursor-pointer transition-all order-4 sm:order-1"
+        onClick={handleSidebar}
+      >
         <HiBars3CenterLeft />
       </div>
-        {/* {sidebar && <Sidebar handleSidebar={handleSidebar}/>} */}
+      {/* {sidebar && <Sidebar handleSidebar={handleSidebar}/>} */}
     </div>
   );
 };

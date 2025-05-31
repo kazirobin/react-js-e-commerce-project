@@ -3,12 +3,12 @@ import SidebarLinks from "./SidebarLinks";
 
 const Sidebar = ({ handleSidebar }) => {
   return (
-    <div className="absolute bottom-0">
-      <div className="flex">
+    <div className=" ">
+      <div className="flex h-screen"> 
         <div className="bg-green-800 hidden sm:block w-20 text-xl">
           <SidebarIcons handleSidebar={handleSidebar} />
         </div>
-        <div className="w-100 bg-white">
+        <div className="w-full mt-13 sm:mt-0 sm:w-95 bg-white">
           <SidebarLinks />
         </div>
         <div className="flex-1 opacity-50"></div>

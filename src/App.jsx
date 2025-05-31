@@ -1,21 +1,26 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar/Navbar'
-import Sidebar from './components/Sidebar/Sidebar'
-import TopAd from './components/TopAd/TopAd'
+import { useState } from "react";
+import "./App.css";
+import Navbar from "./components/nav/Navbar";
+import Sidebar from "./components/sidebar/Sidebar";
+import TopAd from "./components/topAd/TopAd";
 
 function App() {
-  const [sidebar,setSidebar] = useState(true)
- const handleSidebar = () => { setSidebar(!sidebar) }
+  const [sidebar, setSidebar] = useState(true);
+  const handleSidebar = () => {
+    setSidebar(!sidebar);
+  };
 
   return (
     <>
-     <TopAd/>
-     <Navbar handleSidebar={handleSidebar}/>
-     {sidebar && <Sidebar handleSidebar={handleSidebar}/>}
-     
+      <div className="relative h-screen overflow-hidden  ">
+        <TopAd />
+        <Navbar handleSidebar={handleSidebar} />
+        <div className="absolute top-0 left-0 bottom-0 overflow-hidden">
+          {sidebar && <Sidebar handleSidebar={handleSidebar} />}
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
