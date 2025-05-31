@@ -6,6 +6,7 @@ import TopAd from './components/topAd/TopAd';
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
+  
   const handleSidebar = () => {
     setSidebar(!sidebar);
   };
