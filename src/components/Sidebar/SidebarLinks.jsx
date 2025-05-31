@@ -35,7 +35,7 @@ const SidebarLinks = () => {
       <div className="">{/* middle */}</div>
       <div className="text-gray-500 mt-auto">
         <p>20.05.2025</p>
-        <p>23/A Mark Street Road, Newyork City</p>
+        <p>23/A Mark Street Road, Newyork Citys</p>
         <p>info@zillystore.com</p>
         <p>+9888-256-666</p>
       </div>
