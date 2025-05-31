@@ -44,7 +44,7 @@ const SidebarIcons = ({ handleSidebar }) => {
           <RiSearchLine />
         </div>
       </div>
-      <div className="rotate-270 mt-4">
+      <div className="rotate-270 mt-10">
         <img src={logoLight} alt="" />
       </div>
       <div className="text-white flex justify-center mt-15 pb-12">
