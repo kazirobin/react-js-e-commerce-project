@@ -1,6 +1,6 @@
 import { BsEnvelope } from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
-import SocialVertical from "../shared/SocialVertical";
+import SocialVertical from "../shared/SocialVertical.jsx";
 
 const TopAd = () => {
   return (

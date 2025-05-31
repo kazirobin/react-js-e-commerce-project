@@ -7,7 +7,7 @@ import {
   RiUser6Line,
 } from "react-icons/ri";
 import logoLight from "../../../public/images/logo/light_logo.svg";
-import SocialHorizontal from "../shared/SocialHorizontal";
+import SocialHorizontal from "../shared/SocialHorizontal.jsx";
 
 const SidebarIcons = ({ handleSidebar }) => {
   return (

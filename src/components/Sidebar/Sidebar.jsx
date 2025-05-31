@@ -1,5 +1,5 @@
-import SidebarIcons from "./SidebarIcons,jsx";
-import SidebarLinks from "./SidebarLinks,jsx";
+import SidebarIcons from "./SidebarIcons.jsx";
+import SidebarLinks from "./SidebarLinks.jsx";
 
 const Sidebar = ({ handleSidebar }) => {
   return (
