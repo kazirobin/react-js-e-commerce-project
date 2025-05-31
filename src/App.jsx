@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-import Sidebar from "./components/sidebar/Sidebar";
+import Sidebar from "./components/sidebar/Sidebar.jsx";
 import Navbar from "./components/nav/Navbar";
 import TopAd from './components/topAd/TopAd';
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
-  
+
   const handleSidebar = () => {
     setSidebar(!sidebar);
   };
