@@ -5,7 +5,8 @@ import { RiSearchLine } from "react-icons/ri";
 const SidebarLinks = () => {
   const [option, setOption] = useState("All Categories");
   return (
-    <div className="flex flex-col p-7">
+    <div>
+      <div className="flex flex-col p-7">
       <div className="flex mt-10 rounded-md bg-gray-300 px-2 sm:w-80">
         <div className="flex items-center group  p-1 w-40">
           {option} <MdKeyboardArrowDown />
@@ -35,10 +36,11 @@ const SidebarLinks = () => {
       <div className="">{/* middle */}</div>
       <div className="text-gray-500 mt-auto">
         <p>20.05.2025</p>
-        <p>23/A Mark Street Road, Newyork Citys</p>
+        <p>23/A Mark Street Road, Newyork City</p>
         <p>info@zillystore.com</p>
         <p>+9888-256-666</p>
       </div>
+    </div>
     </div>
   );
 };

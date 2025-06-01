@@ -13,11 +13,11 @@ function App() {
 
   return (
     <>
-      <div className="relative h-screen overflow-hidden  ">
+      <div className="relative h-screen overflow-hidden">
         <TopAd/>
         <Navbar handleSidebar={handleSidebar} />
-        <div className="absolute top-0 left-0 bottom-0 overflow-hidden">
-          {sidebar && <Sidebar handleSidebar={handleSidebar} />}
+        <div className="absolute h-screen overflow-scroll scrollbar-hide z-10 top-20 sm:top-0">
+          {sidebar && <Sidebar sidebar={sidebar} handleSidebar={handleSidebar} />}
         </div>
       </div>
     </>
