@@ -8,7 +8,7 @@ const Sidebar = ({ handleSidebar,sidebar }) => {
         <div className="hidden sm:block w-20 text-xl">
           <SidebarIcons handleSidebar={handleSidebar} />
         </div>
-        <div className={`w-full mt-13 ${sidebar ? "" : "hidden"} sm:mt-0 sm:w-95 bg-white`}>
+        <div className={`w-full sm:pt-13 ${sidebar ? "" : "hidden"} sm:mt-0 sm:w-95 bg-white`}>
      
           
           <SidebarLinks />
