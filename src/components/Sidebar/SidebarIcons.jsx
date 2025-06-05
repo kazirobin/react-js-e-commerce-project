@@ -1,13 +1,11 @@
 import { IoIosClose } from "react-icons/io";
-import { FaRegHeart } from "react-icons/fa";
-import { HiOutlineArrowPath } from "react-icons/hi2";
 import {
-  RiSearchLine,
-  RiShoppingBasket2Line,
-  RiUser6Line,
+  RiSearchLine
 } from "react-icons/ri";
 import logoLight from "../../../public/images/logo/light_logo.svg";
 import SocialHorizontal from "../Shared/SocialHorizontal";
+import { PiRecycleThin, PiShoppingCartSimpleThin, PiUserThin } from "react-icons/pi";
+import { CiHeart, CiSearch } from "react-icons/ci";
 
 const SidebarIcons = ({ handleSidebar }) => {
   return (
@@ -23,25 +21,25 @@ const SidebarIcons = ({ handleSidebar }) => {
           <div className="absolute bottom-3 right-4 bg-amber-300 text-black px-1.5 text-xs rounded-full">
             0
           </div>
-          <RiShoppingBasket2Line />
+          <PiShoppingCartSimpleThin />
         </div>
         <div className="cursor-pointer relative">
           <div className="absolute bottom-3 right-4 bg-amber-300  text-black px-1.5 text-xs rounded-full">
             0
           </div>
-          <HiOutlineArrowPath />
+          < PiRecycleThin />
         </div>
         <div className="cursor-pointer relative">
           <div className="absolute bottom-3 right-4 bg-amber-300  text-black px-1.5 text-xs rounded-full">
             0
           </div>
-          <FaRegHeart />
+          <CiHeart />
         </div>
         <div className="cursor-pointer">
-          <RiUser6Line />
+          <PiUserThin />
         </div>
         <div className="cursor-pointer">
-          <RiSearchLine />
+          <CiSearch  />
         </div>
       </div>
       <div className="rotate-270 mt-10">

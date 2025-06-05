@@ -3,6 +3,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link } from "react-router";
 import data from "../../../public/data.json";
 import { RiSearchLine } from "react-icons/ri";
+import { CiSearch } from "react-icons/ci";
 
 const Categories = () => {
   return (
@@ -54,7 +55,7 @@ const Categories = () => {
           placeholder="Type Your Products ..."
         />
         <button className="flex ml-auto items-center gap-2 cursor-pointer bg-amber-400 transition-all hover:bg-green-600 hover:text-white p-2 ps-6 overflow-hidden rounded-r-full font-semibold">
-          Search <RiSearchLine />
+          Search <CiSearch  />
         </button>
       </div>
     </>
