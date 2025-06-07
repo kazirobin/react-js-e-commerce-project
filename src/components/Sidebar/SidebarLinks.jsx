@@ -14,7 +14,7 @@ const SidebarLinks = () => {
   return (
     <div>
       <div className="flex flex-col p-2">
-        <div className="flex  w-77 ps-1 bg-gray-300 rounded-md sm:w-90">
+        <div className="flex ps-1 bg-gray-300 rounded-md sm:w-full border">
           <div className="bg-gray-300 py-1.5 w-33 group relative">
             <div
               className="flex items-center cursor-pointer text-m ps-2"
@@ -137,7 +137,7 @@ const SidebarLinks = () => {
           </div>
         </div>
         <div className="">
-          middle
+          
          <Menus/>
         </div>
         <div className="text-gray-500 border-gray-200 m-1 p-2 sm:p-4 rounded-xl border-2">
