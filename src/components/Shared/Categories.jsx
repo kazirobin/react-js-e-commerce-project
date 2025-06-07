@@ -2,7 +2,6 @@ import { BsFilterLeft } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link } from "react-router";
 import data from "../../../public/data.json";
-import { RiSearchLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 
 const Categories = () => {

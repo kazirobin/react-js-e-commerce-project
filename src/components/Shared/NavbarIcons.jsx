@@ -5,7 +5,7 @@ import { PiRecycleThin, PiShoppingCartSimpleThin, PiUserThin } from "react-icons
 
 const NavbarIcons = ({ handleSidebar }) => {
   return (
-    <div className="ml-auto flex gap-3 items-center text-3xl  sm:text-2xl">
+    <div className="ml-auto flex gap-3 items-center text-xl  sm:text-2xl">
       <div className="cursor-pointer sm:text-emerald-700 sm:bg-emerald-100 p-1 rounded-full">
         <PiUserThin />
       </div>
@@ -34,7 +34,7 @@ const NavbarIcons = ({ handleSidebar }) => {
       </div>
 
       <div
-        className="cursor-pointer transition-all order-4 sm:order-1"
+        className="cursor-pointer transition-all order-4 sm:order-1  hover:text-gray-500"
         onClick={handleSidebar}
       >
         <HiBars3BottomLeft  />

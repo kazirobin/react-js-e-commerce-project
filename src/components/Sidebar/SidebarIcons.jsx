@@ -1,7 +1,4 @@
 import { IoIosClose } from "react-icons/io";
-import {
-  RiSearchLine
-} from "react-icons/ri";
 import logoLight from "../../../public/images/logo/light_logo.svg";
 import SocialHorizontal from "../Shared/SocialHorizontal";
 import { PiRecycleThin, PiShoppingCartSimpleThin, PiUserThin } from "react-icons/pi";
