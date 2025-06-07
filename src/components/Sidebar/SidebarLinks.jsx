@@ -12,7 +12,7 @@ const SidebarLinks = () => {
     setOpen(!open);
   };
   return (
-    <div>
+    <div className="h-12/12 overflow-scroll scrollbar-hide">
       <div className="flex flex-col p-2">
         <div className="flex ps-1 bg-gray-300 rounded-md sm:w-full border">
           <div className="bg-gray-300 py-1.5 w-33 group relative">
