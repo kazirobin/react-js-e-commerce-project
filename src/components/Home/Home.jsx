@@ -15,7 +15,7 @@ const Home = () => {
       <div className="relative h-screen overflow-hidden">
         <TopAd/>
         <Navbar handleSidebar={handleSidebar}/>
-        <div className="absolute h-screen overflow-scroll scrollbar-hide z-10 top-20 sm:top-0 w-full">
+        <div className="h-screen overflow-scroll scrollbar-hide z-10 top-20 sm:top-0 w-full">
           {sidebar && <Sidebar sidebar={sidebar} handleSidebar={handleSidebar} />}
         </div>
       </div>

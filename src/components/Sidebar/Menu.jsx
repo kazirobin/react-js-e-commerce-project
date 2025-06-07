@@ -23,7 +23,7 @@ const Menu = ({ items, level = 0 }) => {
             {item.sub ? (
               <>
                 <div
-                  className="flex justify-between items-center cursor-pointer bg-gray-100 px-2 py-1 rounded hover:bg-gray-200"
+                  className="flex justify-between items-center cursor-pointer bg-gray-100 px-2 py-1 rounded hover:bg-gray-200 transition-all"
                   onClick={() => toggle(key)}
                 >
                   <span>{item.menu}</span>
@@ -41,11 +41,11 @@ const Menu = ({ items, level = 0 }) => {
                 )}
               </>
             ) : item.src ? (
-              <div className="flex items-center group text-sm font-semibold ps-4 py-1">
+              <div className="flex items-center group text-sm font-semibold ps-4 py-1  transition-all">
                 <div
                   className="w-1 h-1 bg-green-600 rounded-4xl hidden group-hover:block group-focus:block group-active:block transition-all"
                   onTouchStart={(e) => {
-                    e.currentTarget.classList.add("block");
+                    e.currentTarget.classList.add("block", " transition-all");
                   }}
                   onTouchEnd={(e) => {
                     e.currentTarget.classList.remove("block");
@@ -55,7 +55,7 @@ const Menu = ({ items, level = 0 }) => {
                   to={`/${item.src}`}
                   className="block px-2 py-1 text-sm text-gray-800 hover:text-green-600 transition-all"
                   onTouchStart={(e) => {
-                    e.currentTarget.classList.add("text-green-600");
+                    e.currentTarget.classList.add("text-green-600"," transition-all");
                   }}
                   onTouchEnd={(e) => {
                     e.currentTarget.classList.remove("text-green-600");

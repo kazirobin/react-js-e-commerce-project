@@ -7,15 +7,14 @@ import Menus from "./Menus";
 const SidebarLinks = () => {
   const [option, setOption] = useState("All Categories");
   const [open, setOpen] = useState(true);
-  const [links, setLinks] = useState(false);
   const handleOpen = () => {
     setOpen(!open);
   };
   return (
-    <div className="h-12/12 overflow-scroll scrollbar-hide">
+    <div className="w-full h-10/12 sm:h-8/12 overflow-scroll scrollbar-hide">
       <div className="flex flex-col p-2">
-        <div className="flex ps-1 bg-gray-300 rounded-md sm:w-full border">
-          <div className="bg-gray-300 py-1.5 w-33 group relative">
+        <div className="flex ps-1 bg-gray-300 rounded-md sm:w-full border overflow-hidden">
+          <div className="bg-gray-300 py-1 w-m-43 group relative">
             <div
               className="flex items-center cursor-pointer text-m ps-2"
               onClick={handleOpen}
@@ -127,7 +126,7 @@ const SidebarLinks = () => {
                 type="text"
                 name=""
                 id=""
-                className="w-35 sm:w-40  focus-visible:outline-none"
+                className=" custom-small sm:w-full focus-visible:outline-none"
                 placeholder="Type Your Products...."
               />
               <div className="cursor-pointer hover:text-gray-500 pe-2">
