@@ -1,0 +1,98 @@
+[
+  {
+    "menu": "Home",
+    "sub": [
+      { "menu": "Home 01", "src": "home-1" },
+      { "menu": "Home 02", "src": "home-2" },
+      { "menu": "Home 03", "src": "home-3" },
+      { "menu": "Home 04", "src": "home-4" },
+      { "menu": "Home 05", "src": "home-5" },
+      { "menu": "Home 06", "src": "home-6" },
+      { "menu": "Home 07", "src": "home-7" }
+    ]
+  },
+  {
+    "menu": "Pages",
+    "sub": [
+      { "menu": "About Us", "src": "about-us" },
+      { "menu": "Team", "src": "team" },
+      { "menu": "Team Single", "src": "team-single" },
+      { "menu": "Pricing Table", "src": "pricing-table" },
+      { "menu": "Daily Deals", "src": "daily-deals" },
+      { "menu": "FAQ Page", "src": "faq" },
+      { "menu": "404 Page", "src": "404" }
+    ]
+  },
+  {
+    "menu": "Shop",
+    "sub": [
+      {
+        "menu": "Shop Layout",
+        "sub": [
+          { "menu": "Shop Default", "src": "shop-default" },
+          { "menu": "Shop Grid Layout 01", "src": "shop-grid-1" },
+          { "menu": "Shop Grid Layout 02", "src": "shop-grid-2" },
+          { "menu": "Shop Grid Layout 03", "src": "shop-grid-3" },
+          { "menu": "Shop Grid Layout 04", "src": "shop-grid-4" },
+          { "menu": "Special Offers", "src": "special-offer" }
+        ]
+      },
+      {
+        "menu": "Shop Layout",
+        "sub": [
+          { "menu": "Shop Grid Layout 01", "src": "shop-grid-1" },
+          { "menu": "Shop Grid Layout 02", "src": "shop-grid-2" },
+          { "menu": "Shop Grid Layout 03", "src": "shop-grid-3" },
+          { "menu": "Shop Grid Layout 04", "src": "shop-grid-4" },
+          { "menu": "Ajax Filter L-Sidebar", "src": "ajax-filter-l-sidebar" },
+          { "menu": "Ajax Filter R-Sidebar", "src": "ajax-filter-r-sidebar" }
+        ]
+      },
+      {
+        "menu": "Shop Ajax",
+        "sub": [
+          { "menu": "Ajax Filter Grid Tab", "src": "ajax-filter-grid-tab" },
+          { "menu": "Ajax Filter Slider Tab", "src": "ajax-filter-slider-tab" },
+          { "menu": "Ajax Pagination", "src": "ajax-pagination" },
+          { "menu": "Ajax Load More", "src": "ajax-load-more" },
+          { "menu": "Ajax Load Auto Scroll", "src": "ajax-load-auto-scroll" },
+          { "menu": "Ajax Filter Accordion", "src": "ajax-filter-accordion" }
+        ]
+      },
+      {
+        "menu": "Shop Ajax",
+        "sub": [
+          { "menu": "Ajax Filter Grid Tab", "src": "ajax-filter-grid-tab" },
+          { "menu": "Ajax Filter Slider Tab", "src": "ajax-filter-slider-tab" },
+          { "menu": "Ajax Pagination", "src": "ajax-pagination" },
+          { "menu": "Ajax Load More", "src": "ajax-load-more" },
+          { "menu": "Ajax Load Auto Scroll", "src": "ajax-load-auto-scroll" },
+          { "menu": "Ajax Filter Accordion", "src": "ajax-filter-accordion" }
+        ]
+      },
+      { "menu": "Shop 2" }
+    ]
+  },
+  {
+    "menu": "Vendor",
+    "sub": [
+      { "menu": "Vendor 1", "src": "home-1" },
+      { "menu": "Home 2", "src": "home-2" }
+    ]
+  },
+  {
+    "menu": "Elements",
+    "sub": [
+      { "menu": "Elements 1", "src": "home-1" },
+      { "menu": "Home 2", "src": "home-2" }
+    ]
+  },
+  {
+    "menu": "Blog",
+    "sub": [
+      { "menu": "Blog 1", "src": "home-1" },
+      { "menu": "Home 2", "src": "home-2" }
+    ]
+  },
+  { "menu": "Contact", "src": "contact" }
+]
