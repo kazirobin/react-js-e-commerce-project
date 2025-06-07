@@ -35,8 +35,8 @@ const Menus = () => {
           <div className="">
             {items.sub.map((subItem,subItemIndex) => (
               <div className="flex items-center group text-sm font-semibold ps-4 py-1" key={subItemIndex}>
-                <div className="w-1 h-1 bg-green-400 hidden group-hover:block transition-all"></div>
-                <Link className="hover:ps-1.5 transition-all" to={subItem.src}>{subItem.menu}</Link>
+                <div className="w-1 h-1 bg-green-600 rounded-4xl hidden group-hover:block group-focus:block group-active:block transition-all" onTouchStart={(e) => { e.currentTarget.classList.add("block") }} ontouchend={(e) => { e.currentTarget.classList.remove("block") }}></div>
+                <Link className="group-hover:ps-1.5 group-focus:ps-1.5 group-active:ps-1.5 transition-all"  onTouchStart={(e) => { e.currentTarget.classList.add("ps-1.5") }} ontouchend={(e) => { e.currentTarget.classList.remove("ps-1.5") }} to={subItem.src}>{subItem.menu}</Link>
               </div>
             ))}
           </div>
