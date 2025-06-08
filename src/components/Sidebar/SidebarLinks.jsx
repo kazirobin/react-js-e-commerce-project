@@ -11,17 +11,16 @@ const SidebarLinks = () => {
     setOpen(!open);
   };
   return (
-    <div className="w-full h-10/12 sm:h-8/12 overflow-scroll scrollbar-hide">
+    <div className="w-full h-12/12 overflow-scroll scrollbar-hide">
       <div className="flex flex-col p-2">
-        <div className="flex ps-1 bg-gray-300 rounded-md sm:w-full border">
+        <div className="flex mx-4 sm:mx-auto ps-1 bg-gray-300 rounded-md sm:w-85 border">
           <div className="bg-gray-300 py-1 w-m-43 group relative">
             <div
-              className="flex items-center cursor-pointer text-m ps-2"
+              className="flex items-center cursor-pointer text-m ps-2 mx-2"
               onClick={handleOpen}
             >
               {option} <MdKeyboardArrowDown />
             </div>
-            {/* absolute hidden top-40 sm:top-18  */}
             <div
               className={`absolute top-8 -left-1 *:p-1 px-2 w-35 bg-gray-300 flex-col gap-2 sm:group-hover:block ${
                 open ? "hidden" : ""
