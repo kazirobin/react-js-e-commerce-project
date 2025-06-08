@@ -33,7 +33,7 @@ const SidebarLinks = () => {
                   setOption("All Categories");
                 }}
               >
-                <span className="cursor-pointer  hover:text-gray-500">
+                <span className="cursor-pointer hover:text-gray-500">
                   All Categories
                 </span>{" "}
               </div>
@@ -44,7 +44,7 @@ const SidebarLinks = () => {
                 }}
               >
                 {" "}
-                <span className="cursor-pointer  hover:text-gray-500">
+                <span className="cursor-pointer hover:text-gray-500">
                   Beverage
                 </span>
               </div>
@@ -55,7 +55,7 @@ const SidebarLinks = () => {
                 }}
               >
                 {" "}
-                <span className="cursor-pointer  hover:text-gray-500">
+                <span className="cursor-pointer hover:text-gray-500">
                   {" "}
                   Desserts
                 </span>
@@ -67,7 +67,7 @@ const SidebarLinks = () => {
                 }}
               >
                 {" "}
-                <span className="cursor-pointer  hover:text-gray-500">
+                <span className="cursor-pointer hover:text-gray-500">
                   {" "}
                   Drinks & Juice
                 </span>
@@ -79,7 +79,7 @@ const SidebarLinks = () => {
                 }}
               >
                 {" "}
-                <span className="cursor-pointer  hover:text-gray-500">
+                <span className="cursor-pointer hover:text-gray-500">
                   {" "}
                   Fish & Meats
                 </span>
@@ -91,7 +91,7 @@ const SidebarLinks = () => {
                 }}
               >
                 {" "}
-                <span className="cursor-pointer  hover:text-gray-500">
+                <span className="cursor-pointer hover:text-gray-500">
                   Fresh Fruits{" "}
                 </span>
               </div>
@@ -102,7 +102,7 @@ const SidebarLinks = () => {
                 }}
               >
                 {" "}
-                <span className="cursor-pointer  hover:text-gray-500">
+                <span className="cursor-pointer hover:text-gray-500">
                   Pets & Animals{" "}
                 </span>
               </div>
@@ -113,7 +113,7 @@ const SidebarLinks = () => {
                 }}
               >
                 {" "}
-                <span className="cursor-pointer  hover:text-gray-500">
+                <span className="cursor-pointer hover:text-gray-500">
                   Toys{" "}
                 </span>
               </div>
@@ -135,8 +135,7 @@ const SidebarLinks = () => {
           </div>
         </div>
         <div className="">
-          
-         <Menus/>
+          <Menus />
         </div>
         <div className="text-gray-500 border-gray-200 m-1 p-2 sm:p-4 rounded-xl border-2">
           <p>20.05.2025</p>

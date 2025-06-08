@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 
 const Home = () => {
-   const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(true);
 
   const handleSidebar = () => {
     setSidebar(!sidebar);
@@ -13,13 +13,15 @@ const Home = () => {
   return (
     <>
       <div className="relative h-screen overflow-hidden">
-        <TopAd/>
-        <Navbar handleSidebar={handleSidebar}/>
+        <TopAd />
+        <Navbar handleSidebar={handleSidebar} />
         <div className="h-screen overflow-scroll scrollbar-hide z-10 top-20 sm:top-0 w-full">
-          {sidebar && <Sidebar sidebar={sidebar} handleSidebar={handleSidebar} />}
+          {sidebar && (
+            <Sidebar sidebar={sidebar} handleSidebar={handleSidebar} />
+          )}
         </div>
       </div>
     </>
   );
-}
-export default Home
+};
+export default Home;
