@@ -13,7 +13,7 @@ const SidebarLinks = () => {
   return (
     <div className="w-full h-10/12 sm:h-8/12 overflow-scroll scrollbar-hide">
       <div className="flex flex-col p-2">
-        <div className="flex ps-1 bg-gray-300 rounded-md sm:w-full border overflow-hidden">
+        <div className="flex ps-1 bg-gray-300 rounded-md sm:w-full border">
           <div className="bg-gray-300 py-1 w-m-43 group relative">
             <div
               className="flex items-center cursor-pointer text-m ps-2"
