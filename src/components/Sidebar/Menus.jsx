@@ -1,5 +1,5 @@
 import Menu from "./Menu";
-import menuData from "./menu-data.json"; // or use the data directly
+import menuData from "../../../public/menu-data.json"; // or use the data directly
 
 const Menus = () => {
   return (
