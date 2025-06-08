@@ -5,7 +5,7 @@ const Sidebar = ({ handleSidebar, sidebar }) => {
   return (
     <div className=" ">
       <div className="flex h-screen absolute sm:top-0">
-        <div className="hidden sm:block w-20 text-xl">
+        <div className="hidden sm:flex h-screen w-20 text-xl">
           <SidebarIcons handleSidebar={handleSidebar} />
         </div>
 

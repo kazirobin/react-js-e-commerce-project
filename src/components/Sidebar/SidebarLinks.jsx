@@ -13,7 +13,7 @@ const SidebarLinks = () => {
   return (
     <div className="w-full h-12/12 overflow-scroll scrollbar-hide">
       <div className="flex flex-col p-2">
-        <div className="flex mx-4 ps-1 bg-gray-300 rounded-md sm:mx-6 text-sm font-semibold">
+        <div className="flex mx-0 ps-1 bg-gray-300 rounded-md sm:mx-6 text-sm font-semibold">
           <div className="bg-gray-300 py-1 w-m-43 group relative">
             <div
               className="flex items-center cursor-pointer text-m ps-2 mx-2"
@@ -125,7 +125,7 @@ const SidebarLinks = () => {
                 type="text"
                 name=""
                 id=""
-                className=" custom-small sm:w-full focus-visible:outline-none"
+                className="custom-small sm:w-full focus-visible:outline-none"
                 placeholder="Type Your Products...."
               />
               <div className="cursor-pointer hover:text-gray-500 pe-2">

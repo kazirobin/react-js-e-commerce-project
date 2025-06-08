@@ -6,8 +6,9 @@ import { CiHeart, CiSearch } from "react-icons/ci";
 
 const SidebarIcons = ({ handleSidebar }) => {
   return (
-    <div className="bg-green-800">
-      <div className="text-white flex flex-col items-center gap-4 pt-4">
+    <div className="bg-green-800 h-screen flex justify-between flex-col">
+
+      <div className="text-white flex flex-col gap-4 items-center pt-4">
         <div
           onClick={handleSidebar}
           className="cursor-pointer rounded bg-white text-gray-500 hover:text-black p-1 text-2xl"
