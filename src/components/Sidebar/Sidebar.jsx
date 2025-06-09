@@ -3,7 +3,7 @@ import SidebarLinks from "./SidebarLinks";
 
 const Sidebar = ({ handleSidebar, sidebar }) => {
   return (
-    <div className=" ">
+    <div className="">
       <div className="flex h-screen absolute sm:top-0">
         <div className="hidden sm:flex h-screen w-20 text-xl">
           <SidebarIcons handleSidebar={handleSidebar} />

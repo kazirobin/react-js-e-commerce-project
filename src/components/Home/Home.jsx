@@ -2,9 +2,10 @@ import { useState } from "react";
 import TopAd from "../TopAd/TopAd";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
+import Navigation from "../Navigation/Navigation";
 
 const Home = () => {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
 
   const handleSidebar = () => {
     setSidebar(!sidebar);
@@ -12,14 +13,15 @@ const Home = () => {
 
   return (
     <>
-      <div className="relative h-screen overflow-hidden">
+      <div className="h-screen">
         <TopAd />
         <Navbar handleSidebar={handleSidebar} />
-        <div className="h-screen overflow-scroll scrollbar-hide z-10 top-20 sm:top-0 w-full">
+        <div className="w-0">
           {sidebar && (
             <Sidebar sidebar={sidebar} handleSidebar={handleSidebar} />
           )}
         </div>
+        <Navigation />
       </div>
     </>
   );
