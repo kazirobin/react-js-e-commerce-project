@@ -3,6 +3,7 @@ import { Link } from "react-router"; // Import Link
 import menuData from "../../../public/menu-data.json";
 import { IoMdArrowDown } from "react-icons/io";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { LuBadgePercent } from "react-icons/lu";
 
 const Navigation = () => {
   const [activeMenu, setActiveMenu] = useState("Elements"); // Home
@@ -12,7 +13,10 @@ const Navigation = () => {
   };
 
   return (
-    <>
+    <> 
+{/* navigation links  */}
+    <div>
+
       {/* Main Menu */}
       <div className="flex">
         {menuData.map((item, index) => (
@@ -22,11 +26,19 @@ const Navigation = () => {
             onClick={() => handleActive(item.menu)}
             onMouseEnter={() => handleActive(item.menu)} // Hover activates menu
             className="flex items-center mx-1 font-semibold relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-green-500 after:transition-all after:duration-300 hover:after:w-full py-2"
-          >
+            >
             {item.menu} {!item.src && <MdKeyboardArrowDown/>}
           </Link>
 
         ))}
+        <div className="flex items-center ml-auto ">
+{/* side massage  */}
+<div className="relative w-full  bg-gray-200">
+  <div className="absolute top-0 right-0 w-2 h-1 bg-green-500"></div>
+</div>
+
+<h1 className="font-semibold flex items-center gap-1"><LuBadgePercent className="text-green-500"/>  Weekly Discount!</h1>
+        </div>
       </div>
 
       {/* Expanded Submenus - Auto-hide when mouse leaves */}
@@ -61,6 +73,7 @@ const Navigation = () => {
           ))}
         </div>
       )}
+      </div>
       </div>
     </>
   );
