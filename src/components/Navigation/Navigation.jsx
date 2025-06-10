@@ -6,7 +6,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 const Navigation = () => {
   return (
-    <div className="hidden lg:flex items-center px-10 py-4 bg-white shadow-lg">
+    <div className="hidden lg:flex items-center px-6 pb-2 bg-white shadow-lg">
       {menuData.map((item, index) => (
         <div key={index} className="relative group">
           <Link
@@ -18,7 +18,7 @@ const Navigation = () => {
 
           {/* Dropdown Menu */}
           <div
-            className={`absolute left-0 top-full mt-2 bg-white shadow-lg rounded-lg p-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ${
+            className={`absolute left-0 top-full mt-2 p-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ${
               item.menu === "Shop" ? "-ml-40 " : "-left-40"
             }
             ${ item.menu === "Contact" ? "w-0 h-0 bg-red-600 hidden -z-50" : "" }
@@ -28,7 +28,7 @@ const Navigation = () => {
               item.menu === "Shop" || item.menu === "Elements" ? "flex" : "flex-col"
             }`}>
               {item.sub?.map((subItem, subInd) => (
-                <div key={subInd} className="bg-white">
+                <div key={subInd} className="bg-white w-50 px-3">
                   <Link 
                     to={`/${subItem.src || ""}`} 
                     className={`block text-gray-600 hover:text-green-500 ${subItem.sub ? "font-bold" : " pb-1"}`}
