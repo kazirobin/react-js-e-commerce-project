@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router"; // Import Link
 import menuData from "../../../public/menu-data.json";
-import { IoMdArrowDown } from "react-icons/io";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { LuBadgePercent } from "react-icons/lu";
+import { FiPhoneCall } from "react-icons/fi";
 
 const Navigation = () => {
   const [activeMenu, setActiveMenu] = useState("Elements"); // Home
@@ -18,7 +18,7 @@ const Navigation = () => {
     <div>
 
       {/* Main Menu */}
-      <div className="flex">
+      <div className="hidden lg:flex px-10 ">
         {menuData.map((item, index) => (
           <Link
             key={index}
@@ -33,12 +33,19 @@ const Navigation = () => {
         ))}
         <div className="flex items-center ml-auto ">
 {/* side massage  */}
-<div className="relative w-full  bg-gray-200">
-  <div className="absolute top-0 right-0 w-2 h-1 bg-green-500"></div>
-</div>
-
 <h1 className="font-semibold flex items-center gap-1"><LuBadgePercent className="text-green-500"/>  Weekly Discount!</h1>
-        </div>
+<div class="custom-shape-1 bg-red-600 h-6 w-6 mb-auto border-1 border-red-600"></div>
+<div className="flex">
+  <div className="bg-red-600 text-white font-semibold p-1 flex items-center-safe">
+    <FiPhoneCall className="text-2xl"/>
+  </div>
+  <div className="bg-red-600 text-white font-semibold p-1">
+
+    <p className="text-xs">Hotline Number</p>
+    <h1 className="text-sm">+9888-256-666</h1>
+  </div>
+</div>
+  </div>
       </div>
 
       {/* Expanded Submenus - Auto-hide when mouse leaves */}
@@ -49,7 +56,7 @@ const Navigation = () => {
         <div
           
             // className={`flex  ${menuData.find((item) => item.menu === activeMenu)?.sub.src ? "flex-col" : ""}`}
-            className={`flex ${menuData.find((item) => item.menu === activeMenu)?.sub?.some(subItem => !subItem.src) ? "" : "flex-col"}`}
+            className={`flex absolute px-10 ${menuData.find((item) => item.menu === activeMenu)?.sub?.some(subItem => !subItem.src) ? "" : "flex-col"}`}
 
           onMouseLeave={() => setActiveMenu(null)} >
             {/* // Auto-hide on mouse out */
@@ -58,9 +65,10 @@ const Navigation = () => {
 
 
           {menuData.find((item) => item.menu === activeMenu)?.sub?.map((subItem, subInd) => (
-            <div key={subInd} className={`w-fit border-2  bg-orange-500 flex flex-col ${menuData.find((item) => item.menu === activeMenu)?.src ? "block" : " "}`}>
+            <div key={subInd} className={`w-fit border-2  bg-orange-500 flex flex-col font-light ${menuData.find((item) => item.menu === activeMenu)?.src ? "block" : " "}`}>
+              {/*mx-auto pb-10 gap-2 pt-5 //for elements */}
               
-                <Link to={`/${subItem.src || ""}`}>{subItem.menu}</Link>
+                <Link to={`/${subItem.src || ""}`} className="font-semibold">{subItem.menu}</Link>
                
               <div className="submenu flex flex-col ">
                 {subItem.sub?.map((deepItem, deepInd) => (

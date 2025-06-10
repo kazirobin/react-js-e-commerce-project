@@ -6,3 +6,6 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.custom-shape-1{
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
