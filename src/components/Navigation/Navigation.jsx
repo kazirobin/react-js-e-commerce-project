@@ -1,54 +1,50 @@
-import { useState } from "react";
-import { Link } from "react-router"; // Corrected import for Link
+import { Link } from "react-router"; // Ensure correct routing
 import menuData from "../../../public/menu-data.json";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { LuBadgePercent } from "react-icons/lu";
 import { FiPhoneCall } from "react-icons/fi";
 
 const Navigation = () => {
-  const [activeMenu, setActiveMenu] = useState(null);
-
-  const handleActive = (menu) => {
-    setActiveMenu((prev) => (prev === menu ? null : menu));
-  };
-
   return (
     <div className="hidden lg:flex items-center px-10 py-4 bg-white shadow-lg">
       {menuData.map((item, index) => (
         <div key={index} className="relative group">
           <Link
             to={`/${item.src || ""}`}
-            onMouseEnter={() => handleActive(item.menu)}
-            className="flex items-center mx-3 font-semibold hover:text-green-500 transition-colors relative"
+            className="flex items-center mx-3 font-semibold text-gray-700 hover:text-green-500 transition-colors relative"
           >
             {item.menu} {!item.src && <MdKeyboardArrowDown />}
           </Link>
 
           {/* Dropdown Menu */}
-          {activeMenu === item.menu && (
-            <div
-              className={`absolute left-0 top-full mt-2 bg-white  rounded-lg p-4 z-50 ${
-                item.menu === "Shop" ? "-ml-40 max-w-screen " : "-left-40"
-              }  ${
-                item.menu === "Contact" ? "w-0 h-0 bg-red-600 hidden -z-50" : ""
-              }`}
-              onMouseLeave={() => setActiveMenu(null)}
-            >
-              <div className={`flex w-30 ${
-                item.menu === "Shop" || item.menu === "Elements" ? "flex" : "flex-col"
-              }`}>
-                
+          <div
+            className={`absolute left-0 top-full mt-2 bg-white shadow-lg rounded-lg p-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ${
+              item.menu === "Shop" ? "-ml-40 " : "-left-40"
+            }
+            ${ item.menu === "Contact" ? "w-0 h-0 bg-red-600 hidden -z-50" : "" }
+            `}
+          >
+            <div className={`flex w-50 ${
+              item.menu === "Shop" || item.menu === "Elements" ? "flex" : "flex-col"
+            }`}>
               {item.sub?.map((subItem, subInd) => (
                 <div key={subInd} className="bg-white">
-                  <Link to={`/${subItem.src || ""}`} className={`block  hover:text-green-500 ${subItem.sub ? "font-bold" : " pb-1"}`}>
+                  <Link 
+                    to={`/${subItem.src || ""}`} 
+                    className={`block text-gray-600 hover:text-green-500 ${subItem.sub ? "font-bold" : " pb-1"}`}
+                  >
                     {subItem.menu}
                   </Link>
 
                   {/* Nested Submenus */}
                   {subItem.sub && (
-                    <div className=" mt-1  w-40">
+                    <div className="mt-1 w-40">
                       {subItem.sub.map((deepItem, deepInd) => (
-                        <Link key={deepInd} to={`/${deepItem.src || ""}`} className="block font-semibold text-sm pt-2 hover:text-green-600">
+                        <Link 
+                          key={deepInd} 
+                          to={`/${deepItem.src || ""}`} 
+                          className="block text-gray-500 hover:text-green-600 font-semibold text-sm pt-2"
+                        >
                           {deepItem.menu}
                         </Link>
                       ))}
@@ -56,9 +52,8 @@ const Navigation = () => {
                   )}
                 </div>
               ))}
-              </div>
             </div>
-          )}
+          </div>
         </div>
       ))}
 
