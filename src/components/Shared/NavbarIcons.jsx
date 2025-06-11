@@ -5,7 +5,7 @@ import { PiRecycleThin, PiShoppingCartSimpleThin, PiUserThin } from "react-icons
 
 const NavbarIcons = ({ handleSidebar }) => {
   return (
-    <div className="ml-auto flex gap-3 items-center text-xl  sm:text-2xl">
+    <div className="ml-auto flex gap-3 items-center text-xl">
       <div className="cursor-pointer sm:text-emerald-700 sm:bg-emerald-100 p-1 rounded-full">
         <PiUserThin />
       </div>

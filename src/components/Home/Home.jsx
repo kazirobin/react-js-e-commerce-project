@@ -15,16 +15,19 @@ const Home = () => {
   return (
     <>
       <div className="h-screen
-       flex flex-col overflow-hidden">
+       flex flex-col overflow-scroll scrollbar-hide">
         <TopAd  />
+        <div className="sticky top-0 left-0 bg-white">
+
         <Navbar handleSidebar={handleSidebar} />
+        </div>
         <div className="w-0">
           {sidebar && (
             <Sidebar sidebar={sidebar} handleSidebar={handleSidebar} />
           )}
         </div>
         <Navigation />
-        <div className="bg-amber-200 flex-1 overflow-auto">
+        <div className="bg-amber-200">
 
         <Content/>
         </div>
