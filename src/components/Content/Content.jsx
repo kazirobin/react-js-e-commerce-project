@@ -1,6 +1,6 @@
 const Content = () => {
   return (
-    <div className="overflow-scroll h-full">
+    <div className="overflow-scroll scrollbar-hide h-full">
 
    <div className="main">1</div>
    <div className="main">2</div>
