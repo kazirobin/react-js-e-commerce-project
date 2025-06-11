@@ -1,108 +1,13 @@
+import Footer from "../Footer/Footer"
+
 const Content = () => {
   return (
     <div className="overflow-scroll scrollbar-hide h-full">
 
    <div className="main">1</div>
-   <div className="main">2</div>
-   <div className="main">3</div>
-   <div className="main">4</div>
-   <div className="main">5</div>
-   <div className="main">6</div>
-   <div className="main">7</div>
-   <div className="main">8</div>
-   <div className="main h-screen">9</div>
-   <div className="main">10</div>
-   <div className="main">11</div>
-   <div className="main">12</div>
-   <div className="main">13</div>
-   <div className="main">14</div>
-   <div className="main">15</div>
-   <div className="main">16</div>
-   <div className="main">17</div>
-   <div className="main">18</div>
-   <div className="main">19</div>
-   <div className="main">20</div>
-   <div className="main">21</div>
-   <div className="main">22</div>
-   <div className="main">23</div>
-   <div className="main">24</div>
-   <div className="main">25</div>
-   <div className="main">26</div>
-   <div className="main">27</div>
-   <div className="main">28</div>
-   <div className="main">29</div>
-   <div className="main">30</div>
-   <div className="main">31</div>
-   <div className="main">32</div>
-   <div className="main">33</div>
-   <div className="main">34</div>
-   <div className="main">35</div>
-   <div className="main">36</div>
-   <div className="main">37</div>
-   <div className="main">38</div>
-   <div className="main">39</div>
-   <div className="main">40</div>
-   <div className="main">41</div>
-   <div className="main">42</div>
-   <div className="main">43</div>
-   <div className="main">44</div>
-   <div className="main">45</div>
-   <div className="main">46</div>
-   <div className="main">47</div>
-   <div className="main">48</div>
-   <div className="main">49</div>
-   <div className="main">50</div>
-   <div className="main">51</div>
-   <div className="main">52</div>
-   <div className="main">53</div>
-   <div className="main">54</div>
-   <div className="main">55</div>
-   <div className="main">56</div>
-   <div className="main">57</div>
-   <div className="main">58</div>
-   <div className="main">59</div>
-   <div className="main">60</div>
-   <div className="main">61</div>
-   <div className="main">62</div>
-   <div className="main">63</div>
-   <div className="main">64</div>
-   <div className="main">65</div>
-   <div className="main">66</div>
-   <div className="main">67</div>
-   <div className="main">68</div>
-   <div className="main">69</div>
-   <div className="main">70</div>
-   <div className="main">71</div>
-   <div className="main">72</div>
-   <div className="main">73</div>
-   <div className="main">74</div>
-   <div className="main">75</div>
-   <div className="main">76</div>
-   <div className="main">77</div>
-   <div className="main">78</div>
-   <div className="main">79</div>
-   <div className="main">80</div>
-   <div className="main">81</div>
-   <div className="main">82</div>
-   <div className="main">83</div>
-   <div className="main">84</div>
-   <div className="main">85</div>
-   <div className="main">86</div>
-   <div className="main">87</div>
-   <div className="main">88</div>
-   <div className="main">89</div>
-   <div className="main">90</div>
-   <div className="main">91</div>
-   <div className="main">92</div>
-   <div className="main">93</div>
-   <div className="main">94</div>
-   <div className="main">95</div>
-   <div className="main">96</div>
-   <div className="main">97</div>
-   <div className="main">98</div>
-   <div className="main">99</div>
-   <div className="main">100</div>
-
+ 
+ 
+<Footer/>
     </div>
   )
 }

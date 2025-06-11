@@ -8,20 +8,20 @@ const Navigation = () => {
   return (
     <div className="hidden lg:flex items-center px-6 pb-2 bg-white shadow-lg h-20">
       {menuData.map((item, index) => (
-        <div key={index} className="relative group">
+        <div key={index} className="relative group ">
           <Link
             to={`/${item.src || ""}`}
-            className="flex items-center mx-3 font-semibold text-gray-700 hover:text-green-500 transition-colors relative"
+            className="flex items-center mx-3 font-semibold text-gray-700 hover:text-green-500 transition-colors relative "
           >
             {item.menu} {!item.src && <MdKeyboardArrowDown />}
           </Link>
 
           {/* Dropdown Menu */}
           <div
-            className={`absolute left-0 top-full mt-2 p-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ${
+            className={`absolute left-0 top-full mt-2 p-4  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ${
               item.menu === "Shop" ? "-ml-45 " : "-left-30"
             }
-            ${ item.menu === "Contact" ? "w-0 h-0 bg-red-600 hidden -z-50" : "" }
+            ${ item.menu === "Contact" ? "w-0 h-0 bg-red-600 hidden " : "" }
             `}
           >
             <div className={`flex  p-3 bg-white w-fit ${

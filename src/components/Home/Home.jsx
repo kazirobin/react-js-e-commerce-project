@@ -17,7 +17,7 @@ const Home = () => {
       <div className="h-screen
        flex flex-col overflow-scroll scrollbar-hide">
         <TopAd  />
-        <div className="sticky top-0 left-0 bg-white">
+        <div className="sticky top-0 left-0 bg-white z-10">
 
         <Navbar handleSidebar={handleSidebar} />
         </div>
@@ -31,6 +31,7 @@ const Home = () => {
 
         <Content/>
         </div>
+        
       </div>
     </>
   );
