@@ -3,6 +3,7 @@ import TopAd from "../TopAd/TopAd";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 import Navigation from "../Navigation/Navigation";
+import Content from "../Content/Content";
 
 const Home = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -13,8 +14,9 @@ const Home = () => {
 
   return (
     <>
-      <div className="h-screen">
-        <TopAd />
+      <div className="h-screen
+       flex flex-col overflow-hidden">
+        <TopAd  />
         <Navbar handleSidebar={handleSidebar} />
         <div className="w-0">
           {sidebar && (
@@ -22,6 +24,10 @@ const Home = () => {
           )}
         </div>
         <Navigation />
+        <div className="bg-amber-200 flex-1 overflow-auto">
+
+        <Content/>
+        </div>
       </div>
     </>
   );
