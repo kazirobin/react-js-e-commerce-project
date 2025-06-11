@@ -2,22 +2,22 @@ import { BsTwitterX } from "react-icons/bs"
 import { FaFacebookF, FaInstagram, FaPinterestP, FaTiktok } from "react-icons/fa"
 import { Link } from "react-router"
 
-const SocialVertical = () => {
+const SocialVertical = ({bg}) => {
   return (
     <div className="flex gap-2">
-      <Link to="!#">
+      <Link to="!#" className={`${bg? "bg-white text-green-600 h-6 w-6 flex justify-center items-center rounded-2xl p-2": ""}`}>
        <FaFacebookF/>
       </Link>
-      <Link to="!#">
+      <Link to="!#" className={`${bg? "bg-white text-green-600 h-6 w-6 flex justify-center items-center rounded-2xl p-2": ""}`}>
       <BsTwitterX/>
       </Link>
-      <Link to="!#">
+      <Link to="!#" className={`${bg? "bg-white text-green-600 h-6 w-6 flex justify-center items-center rounded-2xl p-2": ""}`}>
       <FaPinterestP/>
       </Link>
-      <Link to="!#">
+      <Link to="!#" className={`${bg? "bg-white text-green-600 h-6 w-6 flex justify-center items-center rounded-2xl p-2": ""}`}>
       <FaInstagram/>
       </Link>
-      <Link to="!#">
+      <Link to="!#" className={`${bg? "bg-white text-green-600 h-6 w-6 flex justify-center items-center rounded-2xl p-2": ""}`}>
       <FaTiktok/>
       </Link>
       

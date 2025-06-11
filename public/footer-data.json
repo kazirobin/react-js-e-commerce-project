@@ -1,0 +1,35 @@
+[
+  {
+    "main" : "Quick Links",
+    "sub" :[
+      {"link" :"Smartphones","src" :"smartphones"},
+      {"link" :"Headphones","src" :"headphones"},
+      {"link" :"Laptop & Tablet","src" :"laptop_&_tablet"},
+      {"link" :"Monitors","src" :"monitors"},
+      {"link" :"Printers","src" :"printers"},
+      {"link" :"Gadgets","src" :"gadgets"}
+    ]
+  },
+  {
+    "main" : "Accounts",
+    "sub" :[
+      {"link" :"My Orders","src" :"my_orders"},
+      {"link" :"Cart","src" :"cart"},
+      {"link" :"Checkout","src" :"checkout"},
+      {"link" :"Compare","src" :"compare"},
+      {"link" :"My Account","src" :"my_account"},
+      {"link" :"Wishlist","src" :"wishlist"}
+    ]
+  },
+  {
+    "main" : "Privacy Policy",
+    "sub" :[
+      {"link" :"Returns & Exchanges","src" :"Returns & Exchanges"},
+      {"link" :"Payment Trams","src" :"Payment Terms"},
+      {"link" :"Delivery Terms","src" :"Delivery Terms"},
+      {"link" :"Payment & Pricing","src" :"Payment & Pricing"},
+      {"link" :"Terms Of Use","src" :"Terms Of Use"},
+      {"link" :"Privacy Policy","src" :"Privacy Policy"}
+    ]
+  }
+]
