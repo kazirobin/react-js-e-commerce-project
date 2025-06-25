@@ -15,9 +15,9 @@
     "subject": "1",
     "BannerImage": {
       "leftSide": "https://github.com/kazirobin/react-js-e-commerce-project/blob/main/public/images/banner/home_01_sl_1.jpg?raw=true",
-      "rightTop": "/public/images/banner/home_01_sl_2.jpg",
-      "rightBottomLeft": "/public/images/banner/home_01_sl_3.jpg",
-      "rightBottomRight": "/public/images/banner/slider_home_1_4.jpg"
+      "rightTop": "../../public/images/banner/home_01_sl_2.jpg",
+      "rightBottomLeft": "../../public/images/banner/home_01_sl_3.jpg",
+      "rightBottomRight": "../../public/images/banner/slider_home_1_4.jpg"
     }
   },
   {
