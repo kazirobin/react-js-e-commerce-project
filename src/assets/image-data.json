@@ -14,7 +14,7 @@
   {
     "subject": "1",
     "BannerImage": {
-      "leftSide": "/src/assets/images/banner/home_01_sl_1.jpg",
+      "leftSide": "../assets/images/banner/home_01_sl_1.jpg",
       "rightTop": "/src/assets/images/banner/home_01_sl_2.jpg",
       "rightBottomLeft": "/src/assets/images/banner/home_01_sl_3.jpg",
       "rightBottomRight": "/src/assets/images/banner/slider_home_1_4.jpg"
