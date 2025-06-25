@@ -14,7 +14,7 @@
   {
     "subject": "1",
     "BannerImage": {
-      "leftSide": "https://github.com/kazirobin/react-js-e-commerce-project/blob/main/images/banner/home_01_sl_1.jpg?raw=true",
+      "leftSide": "/images/banner/home_01_sl_1.jpg",
       "rightTop": "/images/banner/home_01_sl_2.jpg",
       "rightBottomLeft": "/images/banner/home_01_sl_3.jpg",
       "rightBottomRight": "/images/banner/slider_home_1_4.jpg"
