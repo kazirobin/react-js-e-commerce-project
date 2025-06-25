@@ -1,0 +1,33 @@
+[
+  {
+    "subject": "0",
+    "CategoriesSvgIcons": {
+      "beverage": "/src/assets/images/categories_icon/beverage.svg",
+      "desserts": "/src/assets/images/categories_icon/desserts.svg",
+      "drinks_juice": "/src/assets/images/categories_icon/drinks_juice.svg",
+      "fish_meats": "/src/assets/images/categories_icon/fish_meats.svg",
+      "fresh_fruits": "/src/assets/images/categories_icon/fresh_fruits.svg",
+      "toys": "/src/assets/images/categories_icon/toys.svg",
+      "vegetables": "/src/assets/images/categories_icon/vegetables.svg"
+    }
+  },
+  {
+    "subject": "1",
+    "BannerImage": {
+      "leftSide": "/src/assets/images/banner/home_01_sl_1.jpg",
+      "rightTop": "/src/assets/images/banner/home_01_sl_2.jpg",
+      "rightBottomLeft": "/src/assets/images/banner/home_01_sl_3.jpg",
+      "rightBottomRight": "/src/assets/images/banner/slider_home_1_4.jpg"
+    }
+  },
+  {
+    "subject": "2",
+    "footerImage": {
+      "lightLogo": "/src/assets/images/logo/light_logo.svg",
+      "googlePlay": "/src/assets/images/footer/google-play.jpg",
+      "appStore": "/src/assets/images/footer/app-store.jpg",
+      "rightBottomRight": "/src/assets/images/banner/slider_home_1_4.jpg",
+      "rightBottomRight1": "/"
+    }
+  }
+]

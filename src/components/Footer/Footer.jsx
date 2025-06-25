@@ -1,4 +1,5 @@
-import footerData from "../../../public/footer-data.json"
+import footerData from "/src/store/footer-data.json"
+import images from "/src/assets/image-data.json"
 import { Link } from 'react-router';
 import { CiLocationOn } from "react-icons/ci";
 import { FiPhoneCall } from "react-icons/fi";
@@ -10,7 +11,7 @@ const Footer = () => {
     <div className="flex flex-wrap lg:justify-evenly md:flex-nowrap text-white text-sm font-semibold p-4">
       {/* first part  */}
     <div className="w-40 flex flex-col gap-4">
-      <img src={`../../../public/images/logo/light_logo.svg`} className="w-25" alt="" srcset="" />
+      <img src={`${images[2].footerImage.lightLogo}`} className="w-25" alt="" srcset="" />
       <p>When an unknown printer took of type scrambled it to make a type specimen book.</p>
       <p className="flex"> <CiLocationOn className="mt-2 me-3 text-xl"/> 23/A Road ,Newyork city</p>
       <p className="flex"> <FiPhoneCall className="m-1 me-3"/> +9888-256-666</p>
@@ -44,8 +45,8 @@ const Footer = () => {
           <p>purchase</p>
           <div className="mt-4">
 
-          <img src={`../../../public/images/footer/google-play.jpg`} className="rounded-sm w-30" alt="" />
-          <img src={`../../../public/images/footer/app-stoe.jpg`} className="rounded-sm w-30 mt-1" alt="" />
+          <img src={`${images[2].footerImage.googlePlay}`} className="rounded-sm w-30" alt="" />
+          <img src={`${images[2].footerImage.appStore}`} className="rounded-sm w-30 mt-1" alt="" />
           </div>
         </div>
 </div>

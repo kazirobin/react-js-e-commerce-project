@@ -1,5 +1,5 @@
 import { Link } from "react-router"; // Ensure correct routing
-import menuData from "../../../public/menu-data.json";
+import menuData from "/src/store/menu-data.json";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { LuBadgePercent } from "react-icons/lu";
 import { FiPhoneCall } from "react-icons/fi";
