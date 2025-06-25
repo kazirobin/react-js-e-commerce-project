@@ -13,7 +13,8 @@ This project is a front-end clone of the Zilly eCommerce template by RadiusTheme
 - HTML5
 - CSS3
 - JavaScript
-- (Optional) Tailwind CSS or Bootstrap if you're using any framework
+- Tailwind CSS
+- React js
 
 ## 🎯 Goal
 
@@ -37,7 +38,7 @@ The main goal of this project is to replicate the layout and style of the origin
 ## 📷 Live Preview
 
 Once deployed, you can add your live demo link here:
-[Live Demo Link](https://react-js-e-commerce-project.vercel.app/)
+[Live Demo Link](https://react-js-e-commerce-project-git-main-kazi-robins-projects.vercel.app/)
 
 ## 📝 Disclaimer
 
