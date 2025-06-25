@@ -1,5 +1,5 @@
 import { IoIosClose } from "react-icons/io";
-import logoLight from "/src/assets/images/logo/light_logo.svg";
+import logoLight from "/public/images/logo/light_logo.svg";
 import SocialHorizontal from "../Shared/SocialHorizontal";
 import { PiRecycleThin, PiShoppingCartSimpleThin, PiUserThin } from "react-icons/pi";
 import { CiHeart, CiSearch } from "react-icons/ci";

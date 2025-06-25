@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import DarkLogo from "/src/assets/images/logo/dark_logo.svg";
+import DarkLogo from "/public/images/logo/dark_logo.svg";
 import NavbarIcons from "../Shared/NavbarIcons";
 import Categories from "../Shared/Categories";
 
