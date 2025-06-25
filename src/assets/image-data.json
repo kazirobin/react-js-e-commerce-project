@@ -8,7 +8,7 @@
       "fish_meats": "/src/assets/images/categories_icon/fish_meats.svg",
       "fresh_fruits": "/src/assets/images/categories_icon/fresh_fruits.svg",
       "toys": "/src/assets/images/categories_icon/toys.svg",
-      "vegetables": "/src/assets/images/categories_icon/vegetables.svg"
+      "vegetables": "../assets/images/categories_icon/vegetables.svg"
     }
   },
   {
