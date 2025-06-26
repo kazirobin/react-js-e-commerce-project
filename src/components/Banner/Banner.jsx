@@ -28,7 +28,7 @@ const Banner = () => {
         </div>
         <div className="p-5 h-90 md:h-60 bg-no-repeat bg-left bg-cover rounded-2xl overflow-hidden" style={{backgroundImage:`url(${images[1].BannerImage.rightBottomRight})`}}>
           <h4 className="salsa-regular text-xl pt-4">Dark wash FaceWash</h4>
-          <h6 className="font-bold text-sm text-green-700">All Fixed Size</h6>
+          <h6 className="font-bold text-sm text-green-700">All Fixed Size </h6>
           <button className="bg-white rounded-3xl px-7 py-2 my-20 cursor-pointer">Shop Now</button>
         </div>
       </div>
