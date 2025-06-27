@@ -13,16 +13,16 @@ const SidebarLinks = () => {
   return (
     <div className="h-12/12 overflow-scroll scrollbar-hide">
       <div className="flex flex-col p-2">
-        <div className="flex mx-0 ps-1 bg-gray-300 rounded-md sm:mx-6 text-sm font-semibold">
-          <div className="bg-gray-300 py-1 w-m-43 group relative">
+        <div className="flex mx-0 ps-1 bg-gray-100 rounded-md sm:mx-6 text-sm font-semibold">
+          <div className="bg-gray-100 p-2 w-m-43 group relative text-xs">
             <div
-              className="flex items-center cursor-pointer text-m ps-2 mx-2"
+              className="flex items-center cursor-pointer ps-2 mx-2"
               onClick={handleOpen}
             >
-              {option} <MdKeyboardArrowDown />
+              {option} <MdKeyboardArrowDown  className="mt-1"/>
             </div>
             <div
-              className={`absolute top-7 left-1 *:p-1 px-2 w-35 bg-gray-300 flex-col gap-2 sm:group-hover:block ${
+              className={`absolute top-7 left-1 *:p-1 px-2 w-35 bg-gray-100 flex-col gap-2 sm:group-hover:block ${
                 open ? "hidden" : ""
               } sm:hidden`}
               onClick={handleOpen}
@@ -119,8 +119,8 @@ const SidebarLinks = () => {
               </div>
             </div>
           </div>
-          <div className="bg-gray-300 flex items-center p-1 flex-1 rounded-md">
-            <div className="flex items-center ms-auto">
+          <div className="bg-gray-100 flex items-center p-1 flex-1 rounded-md">
+            <div className="flex items-center content-between sm:ms-auto">
               <input
                 type="text"
                 name=""
@@ -128,7 +128,7 @@ const SidebarLinks = () => {
                 className="custom-small sm:w-full focus-visible:outline-none"
                 placeholder="Type Your Products...."
               />
-              <div className="cursor-pointer hover:text-gray-500 pe-2">
+              <div className="cursor-pointer hover:text-gray-500 pe-6">
                 <RiSearchLine />
               </div>
             </div>
