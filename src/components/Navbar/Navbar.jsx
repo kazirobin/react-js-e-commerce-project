@@ -5,8 +5,8 @@ import Categories from "../Shared/Categories";
 
 const Navbar = ({ handleSidebar }) => {
   return (
-    <div className="py-4 flex  w-11/12 m-auto">
-      <Link className="w-27 sm:w-35">
+    <div className="py-2 flex  w-11/12 m-auto">
+      <Link className="w-18 sm:w-35">
         <img src={DarkLogo} />
       </Link>
       <Categories />

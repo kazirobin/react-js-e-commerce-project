@@ -11,7 +11,7 @@ const Banner = () => {
           <h1 className="pacifico-regular text-3xl py-3">Fresh Organic</h1>
           <h5 className="font-bold text-2xl text-green-700">Food For All</h5>
           <h3 className="text-3xl font-bold py-3">$59.00</h3>
-          <button className="rounded-full bg-green-700 text-white px-8 py-2 font-semibold cursor-pointer">Shop Now</button>
+          <button className="rounded-full bg-green-700 text-white hover:bg-green-800 px-8 py-2 font-semibold cursor-pointer transition-all">Shop Now</button>
         </div>
       </div>
       <div className="grid gap-4">
@@ -19,17 +19,17 @@ const Banner = () => {
           <h1 className="font-extrabold text-xl">Premium Honeynuts</h1>
           <h5 className="font-bold py-2">100% Salted Organic Nut</h5>
           <h3 className="text-3xl font-bold text-red-600 pb-6">$15.00</h3>
-          <button className="bg-white rounded-3xl px-7 py-2 cursor-pointer">Shop Now</button>
+          <button className="bg-white hover:bg-green-700 hover:text-white font-semibold rounded-3xl px-7 py-2 cursor-pointer transition-all">Shop Now</button>
         </div>
         <div className="h-90 md:h-60 bg-no-repeat bg-left lg:bg-center bg-cover rounded-2xl overflow-hidden text-center text-white font-semibold" style={{backgroundImage:`url(${images[1].BannerImage.rightBottomLeft})`}}>
           <h4 className="salsa-regular text-xl pt-4">New Baby Diaper</h4>
           <h6 className="text-sm">Top Quality Product</h6>
-          <button className="text-black bg-white rounded-2xl px-4 py-1 my-30 cursor-pointer">Shop Now</button>
+          <button className="text-black bg-white  hover:bg-green-700 hover:text-white font-semibold rounded-2xl px-4 py-1 mt-20 cursor-pointer transition-all">Shop Now</button>
         </div>
         <div className="p-5 h-90 md:h-60 bg-no-repeat bg-left bg-cover rounded-2xl overflow-hidden" style={{backgroundImage:`url(${images[1].BannerImage.rightBottomRight})`}}>
           <h4 className="salsa-regular text-xl pt-4">Dark wash FaceWash</h4>
           <h6 className="font-bold text-sm text-green-700">All Fixed Size </h6>
-          <button className="bg-white rounded-3xl px-7 py-2 my-20 cursor-pointer">Shop Now</button>
+          <button className="bg-white  hover:bg-green-700 hover:text-white font-semibold rounded-3xl px-7 py-2 my-20 cursor-pointer transition-all">Shop Now</button>
         </div>
       </div>
     </div>
