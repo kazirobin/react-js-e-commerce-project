@@ -11,14 +11,14 @@ const Navigation = () => {
         <div key={index} className="relative group ">
           <Link
             to={`/${item.src || ""}`}
-            className="flex items-center mx-3 font-semibold text-gray-700 hover:text-green-500 transition-colors relative "
+            className="flex items-center mx-3 font-semibold text-gray-700 hover:text-green-500 transition-colors relative"
           >
             {item.menu} {!item.src && <MdKeyboardArrowDown />}
           </Link>
 
           {/* Dropdown Menu */}
           <div
-            className={`absolute left-0 top-full mt-2 p-4  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ${
+            className={`absolute left-0 top-full mt-2 p-4  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 ${
               item.menu === "Shop" ? "-ml-45 " : "-left-30"
             }
             ${ item.menu === "Contact" ? "w-0 h-0 bg-red-600 hidden " : "" }
@@ -28,7 +28,7 @@ const Navigation = () => {
               item.menu === "Shop" || item.menu === "Elements" ? "flex" : "flex-col"
             }`}>
               {item.sub?.map((subItem, subInd) => (
-                <div key={subInd} className="bg-white w-45">
+                <div key={subInd} className="bg-white w-45 ">
                   <Link 
                     to={`/${subItem.src || ""}`} 
                     className={`block text-gray-600 hover:text-green-500 ${subItem.sub ? "font-bold" : " pb-1"}`}
@@ -38,7 +38,7 @@ const Navigation = () => {
 
                   {/* Nested Submenus */}
                   {subItem.sub && (
-                    <div className="mt-1 w-40">
+                    <div className="mt-1 w-40 ">
                       {subItem.sub.map((deepItem, deepInd) => (
                         <Link 
                           key={deepInd} 

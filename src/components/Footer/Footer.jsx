@@ -12,7 +12,7 @@ const Footer = () => {
       {/* first part  */}
     <div className="lg:col-span-2">
       <img src={`${images[2].footerImage.lightLogo}`} className="w-25 mb-3" alt="" srcset="" />
-      <p className="mb-3">When an unknown printer took of type scrambled it to make a type specimen book.</p>
+      <p className="mb-3 max-w-80">When an unknown printer took of type scrambled it to make a type specimen book.</p>
       <p className="flex items-center mb-3"> <CiLocationOn className="mt-2 me-3 text-2xl"/> 23/A Road ,Newyork city</p>
       <p className="flex mb-3"> <FiPhoneCall className="m-1 me-3 text-xl"/> +9888-256-666</p>
       <SocialVertical bg={true}/>
