@@ -12,17 +12,18 @@ const SidebarLinks = () => {
   };
   return (
     <div className="h-12/12 overflow-scroll scrollbar-hide">
-      <div className="flex flex-col p-2">
-        <div className="flex mx-0 ps-1 bg-gray-100 rounded-md sm:mx-6 text-sm font-semibold">
-          <div className="bg-gray-100 p-2 w-m-43 group relative text-xs">
+      <div className="flex flex-col">
+        <div className="flex bg-gray-100 rounded-md  text-sm font-semibold mx-6">
+          <div className="bg-gray-100  group relative text-xs">
             <div
-              className="flex items-center cursor-pointer ps-2 mx-2"
+              className="flex items-center cursor-pointer p-2 "
               onClick={handleOpen}
             >
-              {option} <MdKeyboardArrowDown  className="mt-1"/>
+              {option} <MdKeyboardArrowDown className="mt-1" />
             </div>
+
             <div
-              className={`absolute top-7 left-1 *:p-1 px-2 w-35 bg-gray-100 flex-col gap-2 sm:group-hover:block ${
+              className={`absolute top-7 left-0 w-30 *:ps-2 *:py-1 bg-gray-100 flex-col gap-2 sm:group-hover:block ${
                 open ? "hidden" : ""
               } sm:hidden`}
               onClick={handleOpen}
@@ -107,25 +108,25 @@ const SidebarLinks = () => {
                 </span>
               </div>
               <div
-                className="flex items-center "
+                className="flex items-center"
                 onClick={() => {
                   setOption("Toys");
                 }}
               >
                 {" "}
-                <span className="cursor-pointer hover:text-gray-500">
+                <span className="pb-4 cursor-pointer hover:text-gray-500">
                   Toys{" "}
                 </span>
               </div>
             </div>
           </div>
           <div className="bg-gray-100 flex items-center p-1 flex-1 rounded-md">
-            <div className="flex items-center content-between sm:ms-auto">
+            <div className="flex items-center content-between ms-auto ">
               <input
                 type="text"
                 name=""
                 id=""
-                className="custom-small sm:w-full focus-visible:outline-none"
+                className="custom-small focus-visible:outline-none"
                 placeholder="Type Your Products...."
               />
               <div className="cursor-pointer hover:text-gray-500 pe-6">
@@ -134,10 +135,10 @@ const SidebarLinks = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="px-2">
           <Menus />
         </div>
-        <div className="text-gray-500 border-gray-200 m-1 p-2 sm:p-4 rounded-xl border-2">
+        <div className="border-gray-200 m-1 p-7 rounded-xl border-2 text-xs flex flex-col gap-1">
           <p>20.05.2025</p>
           <p>23/A Mark Street Road, Newyork City</p>
           <p>info@zillystore.com</p>

@@ -73,7 +73,7 @@
       {
         "menu": "Single Product",
         "sub": [
-          { "menu": "", "src": "product-default" },
+          { "menu": "Product Default", "src": "product-default" },
           { "menu": "Product Thumb Left", "src": "product-thumb-left" },
           { "menu": "Product Thumb Right", "src": "product-thumb-right" },
           { "menu": "Product Thumb Grid", "src": "product-thumb-grid" },

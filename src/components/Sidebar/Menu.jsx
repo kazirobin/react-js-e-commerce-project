@@ -13,7 +13,7 @@ const Menu = ({ items, level = 0 }) => {
   };
 
   return (
-    <div className="space-y-1 transition-all">
+    <div className="space-y-1 *:transition-all">
       {items.map((item, index) => {
         const key = `${level}-${index}`;
         const isOpen = openIndexes[key];
@@ -51,7 +51,7 @@ const Menu = ({ items, level = 0 }) => {
                 )}
               </>
             ) : item.src ? (
-              <div className="flex items-center group text-sm font-semibold ps-4 py-1  transition-all">
+              <div className="flex items-center group text-sm font-semibold  py-1  transition-all">
                 <div
                   className="w-1 h-1 bg-green-600 rounded-4xl hidden group-hover:block group-focus:block group-active:block transition-all"
                   onTouchStart={(e) => {
