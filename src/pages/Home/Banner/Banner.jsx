@@ -1,4 +1,4 @@
-import images from "../../../assets/image-data.json";
+import images from "/src/assets/image-data.json";
 import "./banner.css";
 const Banner = () => {
   return (

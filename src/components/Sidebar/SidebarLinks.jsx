@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { RiSearchLine } from "react-icons/ri";
+import categories from "/src/store/categories-data.json"
 import SocialVertical from "./../Shared/SocialVertical";
 import Menus from "./Menus";
 
@@ -23,101 +24,25 @@ const SidebarLinks = () => {
             </div>
 
             <div
-              className={`absolute top-7 left-0 w-30 *:ps-2 *:py-1 bg-gray-100 flex-col gap-2 sm:group-hover:block ${
+              className={`absolute top-7 left-0 w-30 *:ps-2 *:py-1 pb-4 bg-gray-100 flex-col gap-2 sm:group-hover:block ${
                 open ? "hidden" : ""
               } sm:hidden`}
               onClick={handleOpen}
             >
-              <div
+              
+             {categories.map((category,index) => ( <div key={index}
                 className="flex items-center  "
                 onClick={() => {
-                  setOption("All Categories");
+                  setOption(category.name);
                 }}
               >
                 <span className="cursor-pointer hover:text-gray-500">
-                  All Categories
+                  {category.name}
                 </span>{" "}
-              </div>
-              <div
-                className="flex items-center "
-                onClick={() => {
-                  setOption("Beverage");
-                }}
-              >
-                {" "}
-                <span className="cursor-pointer hover:text-gray-500">
-                  Beverage
-                </span>
-              </div>
-              <div
-                className="flex items-center "
-                onClick={() => {
-                  setOption("Desserts");
-                }}
-              >
-                {" "}
-                <span className="cursor-pointer hover:text-gray-500">
-                  {" "}
-                  Desserts
-                </span>
-              </div>
-              <div
-                className="flex items-center "
-                onClick={() => {
-                  setOption("Drinks & Juice");
-                }}
-              >
-                {" "}
-                <span className="cursor-pointer hover:text-gray-500">
-                  {" "}
-                  Drinks & Juice
-                </span>
-              </div>
-              <div
-                className="flex items-center "
-                onClick={() => {
-                  setOption("Fish & Meats");
-                }}
-              >
-                {" "}
-                <span className="cursor-pointer hover:text-gray-500">
-                  {" "}
-                  Fish & Meats
-                </span>
-              </div>
-              <div
-                className="flex items-center "
-                onClick={() => {
-                  setOption("Fresh Fruits");
-                }}
-              >
-                {" "}
-                <span className="cursor-pointer hover:text-gray-500">
-                  Fresh Fruits{" "}
-                </span>
-              </div>
-              <div
-                className="flex items-center"
-                onClick={() => {
-                  setOption("Pets & Animals");
-                }}
-              >
-                {" "}
-                <span className="cursor-pointer hover:text-gray-500">
-                  Pets & Animals{" "}
-                </span>
-              </div>
-              <div
-                className="flex items-center"
-                onClick={() => {
-                  setOption("Toys");
-                }}
-              >
-                {" "}
-                <span className="pb-4 cursor-pointer hover:text-gray-500">
-                  Toys{" "}
-                </span>
-              </div>
+              </div>  ))}
+
+             
+
             </div>
           </div>
           <div className="bg-gray-100 flex items-center p-1 flex-1 rounded-md">

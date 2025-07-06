@@ -3,8 +3,8 @@ import images from "/src/assets/image-data.json"
 import { Link } from 'react-router';
 import { CiLocationOn } from "react-icons/ci";
 import { FiPhoneCall } from "react-icons/fi";
-import SocialVertical from './../Shared/SocialVertical';
 import { MdCallMade } from "react-icons/md";
+import SocialVertical from './../Shared/SocialVertical';
 const Footer = () => {
   return (
     <div className="bg-green-800">

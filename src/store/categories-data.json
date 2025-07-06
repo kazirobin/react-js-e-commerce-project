@@ -1,0 +1,58 @@
+[
+  {
+    "id":"1",
+    "type":"main",
+    "name":"All Categories",
+    "image":null,
+    "child":[]
+  },
+  {
+    "id":"2",
+    "type":"main",
+    "name":"Beverage",
+    "image":"/images/categories_icon/beverage.svg",
+    "child":[]
+  },
+  {
+    "id":"3",
+    "type":"main",
+    "name":"Desserts",
+    "image":"/images/categories_icon/desserts.svg",
+    "child":[]
+  },
+  {
+    "id":"4",
+    "type":"main",
+    "name":"Drinks & Juice",
+    "image":"/images/categories_icon/drinks_juice.svg",
+    "child":[]
+  },
+  {
+    "id":"5",
+    "type":"main",
+    "name":"Fresh Fruits",
+    "image":"/images/categories_icon/fish_meats.svg",
+    "child":[]
+  },
+  {
+    "id":"6",
+    "type":"main",
+    "name":"Pets & Animals",
+    "image":"/images/categories_icon/fresh_fruits.svg",
+    "child":[]
+  },
+  {
+    "id":"7",
+    "type":"main",
+    "name":"Toys",
+    "image":"/images/categories_icon/toys.svg",
+    "child":[]
+  },
+  {
+    "id":"8",
+    "type":"main",
+    "name":"Vegetables",
+    "image":"/images/categories_icon/vegetables.svg",
+    "child":[]
+  }
+]
