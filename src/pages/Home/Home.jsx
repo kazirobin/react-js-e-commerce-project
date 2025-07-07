@@ -1,3 +1,4 @@
+import Products from '../Products/Products';
 import Banner from './Banner/Banner';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
      <div className="overflow-scroll scrollbar-hide h-full">
       <div className="main">
         <Banner />
+        <Products/>
       </div>
     </div>
     </>

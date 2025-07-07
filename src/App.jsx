@@ -1,13 +1,10 @@
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import Layout from "./components/Layout/Layout";
+import { router } from './routes/route';
 
 
 function App() {
-  return (
-    <>
-      <Layout/>
-    </>
-  );
+  return <RouterProvider router={router}/>
 }
 
 export default App;

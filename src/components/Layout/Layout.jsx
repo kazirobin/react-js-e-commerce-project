@@ -4,6 +4,7 @@ import Navbar from './../Navbar/Navbar';
 import Sidebar from './../Sidebar/Sidebar';
 import Navigation from './../Navigation/Navigation';
 import Footer from './../Footer/Footer';
+import { Outlet } from 'react-router';
 
 
 const Layout = () => {
@@ -30,7 +31,7 @@ const Layout = () => {
         <Navigation />
         <div className="bg-amber-200">
           {/* here the children */}
-
+          <Outlet/>
           
         </div>
               <Footer />

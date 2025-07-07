@@ -1,8 +1,90 @@
 [
   {
-    "productId": 1,
+    "id": 1,
     "categories": ["Vegetables"],
     "name": "Russet Idaho Potatoes Fresh Premium Fruit...",
+    "imageSrc": [
+      "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/veg_3.png",
+      "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/veg_3-150x150.png"
+    ],
+    "additionalInfo": {
+      "weight": ["100gm", "375ml"]
+    },
+    "price": {
+      "minimum": 30.0,
+      "maximum": 38.0,
+      "previous": null
+    },
+    "discount": 16,
+    "rating": 5.0,
+    "fullName": "Russet Idaho Potatoes Fresh Premium Fruit and Produce Vegetables, 4 pound case",
+    "describe": {
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor.",
+      "descriptionfull": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. ibero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.ea commodo consat. Duis aute irure dolor in reprehenderit n volup tate velitesse cillum dolore euy elit ale ruin irure dolor.uis aute irure dolor in reprehenderit n volup tate velit esse cillum,",
+      "describeTags": [
+        "Pellentesque habitant tristique senectus",
+        "Turpis egestaVestibulum tortor quam",
+        "Eugiat vitae ultricies eget tempor"
+      ]
+    },
+    "sku": "BG-1037",
+    "tags": ["Sweet", "Yogurt"],
+    "mfg": "10/02/2025",
+    "extraInfo": [
+      {
+        "info": "Free worldwide shipping on all orders over $100",
+        "logoSrc": ""
+      },
+      { "info": "Guranteed 100% Organic from natural farmas", "logoSrc": "" },
+      { "info": "1 Day Returns if you change your mind", "logoSrc": "" }
+    ],
+    "reviews": []
+  },
+  {
+    "id": 2,
+    "categories": ["Vegetables"],
+    "name": "Russet 2",
+    "imageSrc": [
+      "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/veg_3.png",
+      "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/veg_3-150x150.png"
+    ],
+    "additionalInfo": {
+      "weight": ["100gm", "375ml"]
+    },
+    "price": {
+      "minimum": 30.0,
+      "maximum": 38.0,
+      "previous": null
+    },
+    "discount": 16,
+    "rating": 5.0,
+    "fullName": "Russet Idaho Potatoes Fresh Premium Fruit and Produce Vegetables, 4 pound case",
+    "describe": {
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor.",
+      "descriptionfull": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. ibero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.ea commodo consat. Duis aute irure dolor in reprehenderit n volup tate velitesse cillum dolore euy elit ale ruin irure dolor.uis aute irure dolor in reprehenderit n volup tate velit esse cillum,",
+      "describeTags": [
+        "Pellentesque habitant tristique senectus",
+        "Turpis egestaVestibulum tortor quam",
+        "Eugiat vitae ultricies eget tempor"
+      ]
+    },
+    "sku": "BG-1037",
+    "tags": ["Sweet", "Yogurt"],
+    "mfg": "10/02/2025",
+    "extraInfo": [
+      {
+        "info": "Free worldwide shipping on all orders over $100",
+        "logoSrc": ""
+      },
+      { "info": "Guranteed 100% Organic from natural farmas", "logoSrc": "" },
+      { "info": "1 Day Returns if you change your mind", "logoSrc": "" }
+    ],
+    "reviews": []
+  },
+  {
+    "id": 3,
+    "categories": ["Vegetables"],
+    "name": "Russet 3",
     "imageSrc": [
       "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/veg_3.png",
       "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/veg_3-150x150.png"
