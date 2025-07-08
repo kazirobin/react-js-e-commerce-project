@@ -2,7 +2,7 @@
   {
     "menu": "Home",
     "sub": [
-      { "menu": "Home 01", "src": "home-1" },
+      { "menu": "Products", "src": "products" },
       { "menu": "Home 02", "src": "home-2" },
       { "menu": "Home 03", "src": "home-3" },
       { "menu": "Home 04", "src": "home-4" },
