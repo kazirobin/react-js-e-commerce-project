@@ -94,7 +94,7 @@
     },
     "price": {
       "minimum": 30.0,
-      "maximum": 38.0,
+      "maximum": null,
       "previous": null
     },
     "discount": 16,
