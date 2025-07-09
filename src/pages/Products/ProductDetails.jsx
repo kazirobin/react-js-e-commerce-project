@@ -20,12 +20,14 @@ const ProductDetails = () => {
         <img src={product.imageSrc[0]} alt="" />
       </div>
       <div className="flex flex-col items-center flex-2/6">
-        {product.imageSrc.map((img,index) => <div key={index}>
-          <img src={img} alt="" width="100px" height="200px"/>
+        {product.imageSrc.map((img,index) => <div key={index} className="w-30 border flex items-center justify-center">
+          <img src={img} alt=""/>
         </div>)}
       </div>
       </div>
       {/* image div end  */}
+
+
 
         {/*
       //test data
