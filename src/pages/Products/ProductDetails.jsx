@@ -53,6 +53,21 @@ const ProductDetails = () => {
             <div>({product.reviews.length} Customer Reviews)</div>
             <hr />
           </div>
+          <div className="my-8 border-b border-gray-400 rounded-full "></div>
+          <p>{product.describe.description}</p>
+          <ul className="py-2">
+            {product.describe.describeTags.map((list,index) => ( <li key={index} className="list-disc ms-4">{list}</li> ))}
+          </ul>
+          <div className="my-8 border-b border-gray-400 rounded-full "></div>
+          <div>
+            <div>
+              <p><b>SKU</b>: {product.sku}</p>
+              <p><b>Category</b>: {product.categories}</p>
+              <p><b>Tags</b>: {product.tags.join(", ")}</p>
+              <p><b>MFG</b>: {product.mfg}</p>
+            </div>
+            <div></div>
+          </div>
         </div>
         {/* middle section end */}
         {/* last section start  */}
