@@ -49,7 +49,7 @@
   {
     "id": 2,
     "categories": ["Desserts"],
-    "name": "Aptamil Gold+ ProNutra Biotik Stage 1 Infant Formula– 31.7",
+    "name": "Aptamil Gold+ ProNutra Biotik...",
     "imageSrc": [
       "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/milk_2.png",
       "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/milk_1sss.png"
@@ -98,8 +98,8 @@
     "categories": ["Vegetables"],
     "name": "Whole Foods Market, Organic Trimmed...",
     "imageSrc": [
-      "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2024/01/veg_5-150x150.png",
-      "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2024/01/veg_4-150x150.png"
+      "https://www.freepngimg.com/thumb/categories/2972.png",
+      "https://www.freepngimg.com/thumb/categories/2973.png"
     ],
     "additionalInfo": {
       "weight": ["100gm", "500gm"]
@@ -144,12 +144,12 @@
     "id": 4,
     "categories": ["Vegetables"],
     "name": "Whole Foods Market, Organic Trimmed...",
-    "imageSrc": [
-      "",
-      ""
+      "imageSrc": [
+      "https://www.freepngimg.com/thumb/categories/2974.png",
+      "https://www.freepngimg.com/thumb/categories/2975.png"
     ],
     "additionalInfo": {
-      "weight": ["", "375ml"]
+      "weight": [ "375ml"]
     },
     "price": {
       "minimum": 30.0,
@@ -189,14 +189,15 @@
   },
   {
     "id": 5,
-    "categories": [""],
-    "name": "",
-    "imageSrc": [
-      "",
-      ""
+    "categories": ["Vegetables"],
+    "name": "Whole Foods Market, Organic Trimmed...",
+     "imageSrc": [
+      "https://www.freepngimg.com/thumb/categories/2976.png",
+      "https://www.freepngimg.com/thumb/categories/2984.png",
+      "https://www.freepngimg.com/thumb/categories/2977.png"
     ],
     "additionalInfo": {
-      "weight": ["", "375ml"]
+      "weight": [ "375ml"]
     },
     "price": {
       "minimum": 30.0,
@@ -236,14 +237,15 @@
   },
   {
     "id": 6,
-    "categories": [""],
-    "name": "",
-    "imageSrc": [
-      "",
-      ""
+    "categories": ["Vegetables"],
+    "name": "Whole Foods Market, Organic Trimmed...",
+      "imageSrc": [
+      "https://www.freepngimg.com/thumb/categories/2978.png",
+      "https://www.freepngimg.com/thumb/categories/2983.png",
+      "https://www.freepngimg.com/thumb/categories/2979.png"
     ],
     "additionalInfo": {
-      "weight": ["", "375ml"]
+      "weight": [ "375ml"]
     },
     "price": {
       "minimum": 30.0,
@@ -283,14 +285,15 @@
   },
   {
     "id": 7,
-    "categories": [""],
-    "name": "",
-    "imageSrc": [
-      "",
-      ""
+    "categories": ["Vegetables"],
+    "name": "Whole Foods Market, Organic Trimmed...",
+     "imageSrc": [
+      "https://www.freepngimg.com/thumb/categories/2980.png",
+      "https://www.freepngimg.com/thumb/categories/2982.png",
+      "https://www.freepngimg.com/thumb/categories/2981.png"
     ],
     "additionalInfo": {
-      "weight": ["", "375ml"]
+      "weight": [ "375ml"]
     },
     "price": {
       "minimum": 30.0,
