@@ -19,11 +19,15 @@ const ProductDetails = () => {
       >
         ← Back to Products
       </button>
-      <div className="grid grid-cols-1 md:grid-cols-[30%_42%_28%] bg-white pt-4">
+      <div className="grid grid-cols-1 lg:grid-cols-[40%_35%_25%] bg-white pt-4">
         {/* image div start  */}
         <div className="flex px-3 ">
-          <div className=" border flex-1 border-gray-300 rounded-md">
-            <img src={product.imageSrc[selectedIndex]} alt="" />
+          <div className="h-auto md:border border-gray-300 rounded-md flex-1 flex justify-center">
+            <img
+              src={product.imageSrc[selectedIndex]}
+              alt=""
+              className="lg:h-90 border border-gray-300 rounded-md md:border-none"
+            />
           </div>
           <div className="flex flex-col items-center">
             {product.imageSrc.map((img, index) => (
@@ -56,17 +60,38 @@ const ProductDetails = () => {
           <div className="my-8 border-b border-gray-400 rounded-full "></div>
           <p>{product.describe.description}</p>
           <ul className="py-2">
-            {product.describe.describeTags.map((list,index) => ( <li key={index} className="list-disc ms-4">{list}</li> ))}
+            {product.describe.describeTags.map((list, index) => (
+              <li key={index} className="list-disc ms-4">
+                {list}
+              </li>
+            ))}
           </ul>
           <div className="my-8 border-b border-gray-400 rounded-full "></div>
-          <div>
-            <div>
-              <p><b>SKU</b>: {product.sku}</p>
-              <p><b>Category</b>: {product.categories}</p>
-              <p><b>Tags</b>: {product.tags.join(", ")}</p>
-              <p><b>MFG</b>: {product.mfg}</p>
+          <div className="flex pe-4  text-xs">
+            <div className=" w-90 flex flex-col gap-1">
+              <p>
+                <b>SKU</b>: {product.sku}
+              </p>
+              <p>
+                <b>Category</b>: {product.categories}
+              </p>
+              <p>
+                <b>Tags</b>: {product.tags.join(", ")}
+              </p>
+              <p>
+                <b>MFG</b>: {product.mfg}
+              </p>
             </div>
-            <div></div>
+            <div>
+              {product.extraInfo.map((info, index) => (
+                <div key={index} className="flex gap-2 pb-2 ">
+                  <div className="pt-1 w-10">
+                    <img src={info.logoSrc} alt="" />
+                  </div>
+                  <div>{info.info}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         {/* middle section end */}

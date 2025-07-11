@@ -118,10 +118,10 @@
     "extraInfo": [
       {
         "info": "Free worldwide shipping on all orders over $100",
-        "logoSrc": ""
+        "logoSrc": "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/shipping_car.svg"
       },
-      { "info": "Guranteed 100% Organic from natural farmas", "logoSrc": "" },
-      { "info": "1 Day Returns if you change your mind", "logoSrc": "" }
+      { "info": "Guranteed 100% Organic from natural farmas", "logoSrc": "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/bean.svg" },
+      { "info": "1 Day Returns if you change your mind", "logoSrc": "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/round_arrow.svg" }
     ],
     "reviews": [ ]
   }
