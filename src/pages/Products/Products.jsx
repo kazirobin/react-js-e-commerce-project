@@ -6,7 +6,7 @@ const Products = () => {
     <div className="bg-white">
       <div>
         <h1>featured Products</h1>
-        <div className="grid  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 transition-all">
+        <div className="grid  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 transition-all">
           {/* all products start */}
           {products.map((product, index) => (
             

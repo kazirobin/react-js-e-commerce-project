@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import productData from "../../store/products-data.json";
 import { useState } from "react";
 import StarRating from "../../components/Shared/StarRating";
+import ShareProduct from "../../components/Shared/ShareProduct";
 
 const ProductDetails = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -93,6 +94,7 @@ const ProductDetails = () => {
               ))}
             </div>
           </div>
+          <ShareProduct/>
         </div>
         {/* middle section end */}
         {/* last section start  */}
