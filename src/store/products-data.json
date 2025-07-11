@@ -95,23 +95,23 @@
   },
   {
     "id": 3,
-    "categories": [""],
-    "name": "",
+    "categories": ["Vegetables"],
+    "name": "Whole Foods Market, Organic Trimmed...",
     "imageSrc": [
-      "",
-      ""
+      "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2024/01/veg_5-150x150.png",
+      "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2024/01/veg_4-150x150.png"
     ],
     "additionalInfo": {
-      "weight": ["", "375ml"]
+      "weight": ["100gm", "500gm"]
     },
     "price": {
-      "minimum": 30.0,
-      "maximum": 38.0,
+      "minimum": 3.0,
+      "maximum": 8.0,
       "previous": null
     },
-    "discount": 16,
+    "discount": 77,
     "rating": 5.0,
-    "fullName": "",
+    "fullName": "Whole Foods Market, Organic Trimmed Green Beans, 12 oz",
     "describe": {
       "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor.",
       "descriptionfull": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. ibero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.ea commodo consat. Duis aute irure dolor in reprehenderit n volup tate velitesse cillum dolore euy elit ale ruin irure dolor.uis aute irure dolor in reprehenderit n volup tate velit esse cillum,",
@@ -138,12 +138,12 @@
         "logoSrc": "https://www.radiustheme.com/demo/wordpress/themes/zilly/wp-content/uploads/2023/11/round_arrow.svg"
       }
     ],
-    "reviews": []
+    "reviews": [{"name":"Admin","date":"25.01.2024","review":"fresh food","imgSrc":"","rating":5 }]
   },
   {
     "id": 4,
-    "categories": [""],
-    "name": "",
+    "categories": ["Vegetables"],
+    "name": "Whole Foods Market, Organic Trimmed...",
     "imageSrc": [
       "",
       ""
