@@ -6,7 +6,7 @@ import StarRating from "../../components/Shared/StarRating";
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="relative p-4 shadow-gray-700 shadow rounded-2xl m-2 flex flex-col items-baseline justify-between flex-wrap max-w-50">
+    <div className="relative p-4 shadow-gray-700 shadow rounded-2xl m-2 flex flex-col items-baseline justify-between flex-wrap max-w-50 text-xs">
       <p>{product.categories[0]}</p>
       <div className="group flex flex-col gap-2 absolute right-4 top-4 transition-all text-3xl">
         <div className="cursor-pointer hover:text-green-500">
@@ -28,12 +28,12 @@ const ProductCard = ({ product }) => {
       </div>
       <div className="flex gap-3 my-3">
         {product.additionalInfo.weight.map((item, index) => (
-          <div key={index} className="border rounded-full px-2">
+          <div key={index} className="border rounded-full px-2 pb-0.5">
             {item}
           </div>
         ))}
       </div>
-      <div className="flex font-bold gap-1 flex-wrap">
+      <div className="flex items-center font-bold gap-1 flex-wrap">
         ${product.price.minimum}.00
         {product.price.maximum ? (
           <h1>- ${product.price.maximum}.00</h1>
@@ -52,7 +52,7 @@ const ProductCard = ({ product }) => {
           -{product.discount}%
         </div>
       </div>
-      <Link to={`/products/${product.id}`} className="w-full">
+      <Link to={`/products/${product.id}`} className="w-full pt-2">
         <h1 className="font-bold">{product.name}</h1>
       </Link>
       <div className="flex items-center text-gray-400">

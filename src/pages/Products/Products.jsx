@@ -6,7 +6,7 @@ const Products = () => {
     <div className="bg-white">
       <div>
         <h1>featured Products</h1>
-        <div className="flex flex-wrap transition-all">
+        <div className="grid grid-cols-[repeat(auto-fill,_minmax(220px,_1fr))] transition-all">
           {/* all products start */}
           {products.map((product, index) => (
             
