@@ -6,7 +6,7 @@ import StarRating from "../../components/Shared/StarRating";
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="relative p-4 shadow-gray-700 shadow rounded-2xl m-2 flex flex-col items-baseline justify-between flex-wrap max-w-50 text-xs">
+    <div className="relative p-4 shadow-gray-700 shadow rounded-2xl m-2 flex flex-col items-baseline justify-between flex-wrap  text-xs">
       <p>{product.categories[0]}</p>
       <div className="group flex flex-col gap-2 absolute right-4 top-4 transition-all text-3xl">
         <div className="cursor-pointer hover:text-green-500">
