@@ -8,7 +8,7 @@ const Products = () => {
         <h1 className="font-bold text-2xl p-2">Featured Products</h1>
         <div className="grid sm:grid-cols-[repeat(auto-fill,_minmax(220px,_1fr))] transition-all">
           {/* all products start */}
-          {products.map((product, index) => (
+          {products.slice(0,6).map((product, index) => (
             
          <ProductCard product={product} key={index} />
 

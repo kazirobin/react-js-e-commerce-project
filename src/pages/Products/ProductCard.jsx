@@ -7,8 +7,8 @@ import StarRating from "../../components/Shared/StarRating";
 const ProductCard = ({ product }) => {
   return (
     <div className="relative p-4 shadow-gray-700 shadow rounded-2xl m-2 flex flex-col items-baseline justify-between flex-wrap  text-xs">
-      <p>{product.categories[0]}</p>
-      <div className="group flex flex-col gap-2 absolute right-4 top-4 transition-all text-3xl">
+      <p className="text-gray-400 font-semibold">{product.categories[0]}</p>
+      <div className="group flex flex-col gap-2 absolute right-4 top-4 transition-all text-3xl overflow-hidden">
         <div className="cursor-pointer hover:text-green-500">
           <CiHeart />
         </div>
@@ -20,10 +20,10 @@ const ProductCard = ({ product }) => {
           <CiSearch />
         </div>
       </div>
-      <div className="flex justify-center w-full">
+      <div className="flex justify-center w-full  mt-4">
         <Link to={`/products/${product.id}`}>
           {" "}
-          <img src={product.imageSrc[0]} alt="" />
+          <img src={product.imageSrc[0]} alt="" className="transition-transform duration-300 hover:scale-110"/>
         </Link>
       </div>
       <div className="flex gap-3 my-3">
@@ -53,7 +53,7 @@ const ProductCard = ({ product }) => {
         </div>
       </div>
       <Link to={`/products/${product.id}`} className="w-full pt-2">
-        <h1 className="font-bold">{product.name}</h1>
+        <h1 className="font-semibold hover:text-green-700">{product.name}</h1>
       </Link>
       <div className="flex items-center text-gray-400">
         <StarRating rating={product.rating} />
