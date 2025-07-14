@@ -18,7 +18,7 @@ const Categories = () => {
           </span>
         </h3>
         <div className="absolute hidden bg-white group-hover:block  font-semibold w-61">
-          <Link className="flex gap-3  transition-all hover:gap-5 hover:text-green-600 border-b-1 border-gray-300 ps-4 pe-20 py-2">
+          <Link to="beverage" className="flex gap-3  transition-all hover:gap-5 hover:text-green-600 border-b-1 border-gray-300 ps-4 pe-20 py-2">
             <img src={data[0].CategoriesSvgIcons.beverage} /> Beverage
           </Link>
           <Link className="flex gap-3 transition-all hover:gap-5 hover:text-green-600 border-b-1 border-gray-300 ps-4 pe-20 py-2">
