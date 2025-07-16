@@ -60,7 +60,7 @@ const ProductCard = ({ product }) => {
         </div>
 
         <div className="w-full pt-2">
-          <h1 className="font-semibold hover:text-green-700  line-clamp-1">{product.name}</h1>
+          <h1 className="font-semibold hover:text-green-700 0. line-clamp-1">{product.name}</h1>
         </div>
 
         <div className="flex items-center text-gray-400">
