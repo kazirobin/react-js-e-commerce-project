@@ -14,7 +14,7 @@ const Sidebar = ({ handleSidebar, sidebar }) => {
             sidebar ? "" : "hidden"
           } sm:mt-0 sm:w-95 bg-white`}
         >
-          <SidebarLinks />
+          <SidebarLinks handleSidebar={handleSidebar} />
         </div>
       </div>
     </div>

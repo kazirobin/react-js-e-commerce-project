@@ -12,6 +12,7 @@ const Layout = () => {
  
   const handleSidebar = () => {
     setSidebar(!sidebar);
+    console.log("sidebar clicked")
   };
 
   return (

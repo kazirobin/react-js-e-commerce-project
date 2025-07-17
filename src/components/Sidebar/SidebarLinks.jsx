@@ -5,7 +5,7 @@ import categories from "/src/store/categories-data.json"
 import SocialVertical from "./../Shared/SocialVertical";
 import Menus from "./Menus";
 
-const SidebarLinks = () => {
+const SidebarLinks = ({handleSidebar}) => {
   const [option, setOption] = useState("All Categories");
   const [open, setOpen] = useState(true);
   const handleOpen = () => {
@@ -18,7 +18,7 @@ const SidebarLinks = () => {
           <div className="bg-gray-100  group relative text-xs">
             <div
               className="flex items-center cursor-pointer p-2 "
-              onClick={handleOpen}
+              onClick={handleSidebar}
             >
               {option} <MdKeyboardArrowDown className="mt-1" />
             </div>
@@ -27,7 +27,7 @@ const SidebarLinks = () => {
               className={`absolute top-7 left-0 w-30 *:ps-2 *:py-1 pb-4 bg-gray-100 flex-col gap-2 sm:group-hover:block ${
                 open ? "hidden" : ""
               } sm:hidden`}
-              onClick={handleOpen}
+          
             >
               
              {categories.map((category,index) => ( <div key={index}
@@ -61,7 +61,7 @@ const SidebarLinks = () => {
           </div>
         </div>
         <div className="px-2">
-          <Menus />
+          <Menus handleSidebar={handleSidebar} />
         </div>
         <div className="border-gray-200 m-1 p-7 rounded-xl border-2 text-xs flex flex-col gap-1">
           <p>20.05.2025</p>

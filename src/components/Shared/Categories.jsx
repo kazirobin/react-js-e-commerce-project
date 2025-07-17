@@ -7,7 +7,7 @@ import { CiSearch } from "react-icons/ci";
 const Categories = () => {
   return (
     <>
-      <div className=" relative rounded-full border w-45 h-10 pt-1 ps-2 overflow-hidden hover:overflow-visible">
+      <div className="hidden sm:block relative rounded-full border w-45 h-10 pt-1 ps-2 overflow-hidden hover:overflow-visible">
         <div className="absolute   flex items-baseline">
           <BsFilterLeft className="absolute w-8 h-7 pt-1"/>
           <div className="pt-1 absolute top-0 -left-4">
