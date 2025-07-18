@@ -63,7 +63,7 @@ const Menu = ({ items, level = 0 ,handleSidebar}) => {
                   }}
                 ></div>
                 <Link
-                  onClick={() => { handleSidebar() }}
+                  onClick={() => { }}
                   to={`/${item.src}`}
                   className="block px-2 py-1 text-sm text-gray-800 hover:text-green-600 transition-all"
                  
