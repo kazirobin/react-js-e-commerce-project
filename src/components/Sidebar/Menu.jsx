@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { TbSquareRoundedMinus, TbSquareRoundedPlus } from "react-icons/tb";
 
 const Menu = ({ items, level = 0 ,handleSidebar}) => {

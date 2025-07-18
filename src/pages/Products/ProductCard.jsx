@@ -6,23 +6,46 @@ import StarRating from "../../components/Shared/StarRating";
 import { useState } from "react";
 
 const ProductCard = ({ product }) => {
-  const [option,setOption] = useState(false)
+  const [showOptions, setShowOptions] = useState(false);
+  const [option, setOption] = useState(false);
 
   return (
-    <Link to={`/products/${product.id}`}>
-      <div onClick={(e) => {e.stopPropagation();e.preventDefault(); console.log("hello"); setOption(true); }} className="relative p-4 shadow-gray-700 shadow rounded-2xl m-2 flex flex-col items-baseline justify-between flex-wrap  text-xs">
-        <p className="text-gray-400 font-semibold">{product.categories[0]}</p>
-        <div className="group flex flex-col gap-2 absolute right-4 top-4 transition-all text-3xl overflow-hidden">
+    <Link to={`/products/${product.id}`} className="mb-4 pb-2">
+      <div className="relative p-4 shadow-gray-700 shadow rounded-2xl m-2 flex flex-col items-baseline justify-between flex-wrap  text-xs h-full">
+        <p className="text-gray-400 font-semibold ">{product.categories[0]}</p>
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            setShowOptions(true);
+          }}
+          onTouchStart={() => setShowOptions(true)}
+          className="flex flex-col gap-2 absolute right-4 top-4 transition-all text-3xl overflow-hidden "
+        >
           <div className="cursor-pointer hover:text-green-500">
             <CiHeart />
           </div>
-          <div className="hidden group-hover:block cursor-pointer hover:text-green-500">
-            {" "}
-            <MdDone />
-          </div>
-          <div className="hidden group-hover:block cursor-pointer hover:text-green-500">
-            <CiSearch />
-          </div>
+          {showOptions && (
+            <div
+              onClick={(e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                setShowOptions(false);
+              }}
+            >
+              <div
+                className="cursor-pointer hover:text-green-500"
+                onClick={() => {
+                  setOption(false);
+                }}
+              >
+                <MdDone />
+              </div>
+              <div className="cursor-pointer hover:text-green-500 mt-3">
+                <CiSearch />
+              </div>
+            </div>
+          )}
         </div>
         <div className="flex justify-center w-full  mt-4">
           {" "}
@@ -60,17 +83,29 @@ const ProductCard = ({ product }) => {
         </div>
 
         <div className="w-full pt-2">
-          <h1 className="font-semibold hover:text-green-700 0. line-clamp-1">{product.name}</h1>
+          <h1 className="font-semibold hover:text-green-700 0. line-clamp-1">
+            {product.name}
+          </h1>
         </div>
 
         <div className="flex items-center text-gray-400">
           <StarRating rating={product.rating} />
           <div className="ms-2 text-sm">({product.rating}.00)</div>
         </div>
-            {option && (<div>
-              <h1>Option</h1>
-            </div>) }
-        <div className="w-full" onClick={(e) => {e.stopPropagation();e.preventDefault(); console.log("hello"); setOption(true); }}>
+        {option && (
+          <div>
+            <h1>Option</h1>
+          </div>
+        )}
+        <div
+          className="w-full"
+          onClick={(e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            console.log("hello");
+            setOption(true);
+          }}
+        >
           <div className="flex justify-center gap-1 border rounded-full px-4 py-2 text-xs font-semibold text-green-700 bg-green-100 hover:bg-green-800 hover:text-white ">
             <BsCart2 className="mt-0.5" />
             Select Options

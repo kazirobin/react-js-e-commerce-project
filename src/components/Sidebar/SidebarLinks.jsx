@@ -18,7 +18,7 @@ const SidebarLinks = ({handleSidebar}) => {
           <div className="bg-gray-100  group relative text-xs">
             <div
               className="flex items-center cursor-pointer p-2 "
-              onClick={handleSidebar}
+              onClick={handleOpen}
             >
               {option} <MdKeyboardArrowDown className="mt-1" />
             </div>
