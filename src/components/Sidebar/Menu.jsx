@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { TbSquareRoundedMinus, TbSquareRoundedPlus } from "react-icons/tb";
+import { useSidebar } from "../../context/SidebarContext";
 
-const Menu = ({ items, level = 0 ,handleSidebar}) => {
+const Menu = ({ items, level = 0 }) => {
   const [openIndexes, setOpenIndexes] = useState({});
-
+  const { handleSidebar } = useSidebar()
   const toggle = (key) => {
     setOpenIndexes((prev) => ({
       ...prev,
@@ -63,7 +64,7 @@ const Menu = ({ items, level = 0 ,handleSidebar}) => {
                   }}
                 ></div>
                 <Link
-                  onClick={() => { }}
+                  onClick={handleSidebar}
                   to={`/${item.src}`}
                   className="block px-2 py-1 text-sm text-gray-800 hover:text-green-600 transition-all"
                  

@@ -1,12 +1,14 @@
+import { useSidebar } from "../../context/SidebarContext";
 import SidebarIcons from "./SidebarIcons";
 import SidebarLinks from "./SidebarLinks";
 
-const Sidebar = ({ handleSidebar, sidebar }) => {
+const Sidebar = () => {
+  const {  sidebar } = useSidebar();
   return (
     <div className="">
       <div className="flex h-screen absolute sm:top-0 z-10">
         <div className="hidden sm:flex h-screen w-20 text-xl">
-          <SidebarIcons handleSidebar={handleSidebar} />
+          <SidebarIcons  />
         </div>
 
         <div
@@ -14,7 +16,7 @@ const Sidebar = ({ handleSidebar, sidebar }) => {
             sidebar ? "" : "hidden"
           } sm:mt-0 sm:w-95 bg-white`}
         >
-          <SidebarLinks handleSidebar={handleSidebar} />
+          <SidebarLinks />
         </div>
       </div>
     </div>

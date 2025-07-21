@@ -6,7 +6,7 @@ const Products = () => {
     <div className="bg-white px-2 sm:px-4">
       <div>
         <h1 className="font-bold text-2xl p-2">Featured Products</h1>
-        <div className="grid sm:grid-cols-[repeat(auto-fill,_minmax(220px,_1fr))] transition-all">
+        <div className="grid sm:grid-cols-[repeat(auto-fill,_minmax(220px,_1fr))] xl:grid-cols-[repeat(auto-fill,_minmax(420px,_1fr))] transition-all">
           {/* all products start */}
           {products.slice(0,6).map((product, index) => (
             

@@ -3,8 +3,10 @@ import logoLight from "/public/images/logo/light_logo.svg";
 import SocialHorizontal from "../Shared/SocialHorizontal";
 import { PiRecycleThin, PiShoppingCartSimpleThin, PiUserThin } from "react-icons/pi";
 import { CiHeart, CiSearch } from "react-icons/ci";
+import { useSidebar } from "../../context/SidebarContext";
 
-const SidebarIcons = ({ handleSidebar }) => {
+const SidebarIcons = () => {
+  const { handleSidebar } = useSidebar()
   return (
     <div className="bg-green-800 h-screen flex justify-between flex-col">
 

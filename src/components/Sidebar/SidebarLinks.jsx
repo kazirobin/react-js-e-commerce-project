@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { RiSearchLine } from "react-icons/ri";
-import categories from "/src/store/categories-data.json"
+import categories from "/src/store/categories-data.json";
 import SocialVertical from "./../Shared/SocialVertical";
 import Menus from "./Menus";
 
-const SidebarLinks = ({handleSidebar}) => {
+const SidebarLinks = () => {
+  
   const [option, setOption] = useState("All Categories");
   const [open, setOpen] = useState(true);
   const handleOpen = () => {
@@ -27,22 +28,20 @@ const SidebarLinks = ({handleSidebar}) => {
               className={`absolute top-7 left-0 w-30 *:ps-2 *:py-1 pb-4 bg-gray-100 flex-col gap-2 sm:group-hover:block ${
                 open ? "hidden" : ""
               } sm:hidden`}
-          
             >
-              
-             {categories.map((category,index) => ( <div key={index}
-                className="flex items-center  "
-                onClick={() => {
-                  setOption(category.name);
-                }}
-              >
-                <span className="cursor-pointer hover:text-gray-500">
-                  {category.name}
-                </span>{" "}
-              </div>  ))}
-
-             
-
+              {categories.map((category, index) => (
+                <div
+                  key={index}
+                  className="flex items-center  "
+                  onClick={() => {
+                    setOption(category.name);
+                  }}
+                >
+                  <span className="cursor-pointer hover:text-gray-500">
+                    {category.name}
+                  </span>{" "}
+                </div>
+              ))}
             </div>
           </div>
           <div className="bg-gray-100 flex items-center p-1 flex-1 rounded-md">
@@ -61,7 +60,7 @@ const SidebarLinks = ({handleSidebar}) => {
           </div>
         </div>
         <div className="px-2">
-          <Menus handleSidebar={handleSidebar} />
+          <Menus />
         </div>
         <div className="border-gray-200 m-1 p-7 rounded-xl border-2 text-xs flex flex-col gap-1">
           <p>20.05.2025</p>

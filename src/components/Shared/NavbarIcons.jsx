@@ -1,9 +1,11 @@
 import { CiHeart } from "react-icons/ci";
 import { HiBars3BottomLeft } from "react-icons/hi2";
 import { PiRecycleThin, PiShoppingCartSimpleThin, PiUserThin } from "react-icons/pi";
+import { useSidebar } from "../../context/SidebarContext";
 
 
-const NavbarIcons = ({ handleSidebar }) => {
+const NavbarIcons = () => {
+  const { handleSidebar } = useSidebar()
   return (
     <div className="ml-auto flex gap-3 items-center text-xl">
       <div className="cursor-pointer sm:text-emerald-700 sm:bg-emerald-100 p-1 rounded-full">
