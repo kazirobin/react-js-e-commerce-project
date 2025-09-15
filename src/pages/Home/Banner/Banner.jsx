@@ -2,9 +2,9 @@ import images from "/src/assets/image-data.json";
 import "./banner.css";
 const Banner = () => {
   return (
-    <div className="px-3 md:px-10 mx-auto my-4 grid gap-4 md:grid-cols-2">
+    <div className="px-3 md:px-10 mx-auto my-4 grid gap-4 md:grid-cols-5">
       <div
-        className="h-auto bg-center bg-no-repeat bg-[length:160%_110%] hover:bg-[length:165%_115%] rounded-2xl overflow-hidden transition-all"
+        className="h-auto bg-center bg-no-repeat bg-[length:160%_110%] hover:bg-[length:165%_115%] rounded-2xl overflow-hidden transition-all md:col-span-3"
         style={{ backgroundImage: `url(${images[1].BannerImage.leftSide})` }}
       >
         <div className="py-17 ps-7  relative">
@@ -28,7 +28,7 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div className="grid gap-4">
+      <div className="grid gap-4 md:col-span-2">
         <div
           className="h-70 sm:col-span-2 bg-center bg-[length:140%_100%] hover:bg-[length:145%_105%] bg-no-repeat rounded-2xl overflow-hidden ps-6 pt-10 transition-all"
           style={{
