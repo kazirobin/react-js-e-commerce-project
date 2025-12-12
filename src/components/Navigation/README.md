@@ -6,6 +6,7 @@
     Home 05
     Home 06
     Home 07
+    Home 08
 - Pages
     About Us
     Team
